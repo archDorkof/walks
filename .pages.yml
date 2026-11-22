@@ -1,0 +1,283 @@
+# Pages CMS configuration: https://pagescms.org
+# Sign in at https://app.pagescms.org with GitHub and choose this repository.
+
+media:
+  input: media
+  output: /media
+  extensions: [jpg, jpeg, png, webp, gpx]
+
+content:
+  - name: walks
+    label: Walks
+    type: collection
+    path: content/walks
+    format: json
+    view:
+      fields: [title, area, published]
+      primary: title
+      sort: order
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+        description: "e.g. Mercurys Boot & the Stargate Tunnel"
+      - name: slug
+        label: Web address
+        type: string
+        required: true
+        description: "Lower case with hyphens, e.g. castle-rock. The page will be walks.mawt.info/castle-rock"
+      - name: published
+        label: Show on site
+        type: boolean
+      - name: order
+        label: Order on home page
+        type: number
+        description: "1 = first"
+      - name: area
+        label: Area (shown above the title)
+        type: string
+      - name: lede
+        label: One-sentence summary (under the title)
+        type: text
+      - name: description
+        label: Search engine description
+        type: text
+      - name: hero_image
+        label: Main photo
+        type: image
+      - name: hero_alt
+        label: Main photo description (alt text)
+        type: string
+
+      - name: card
+        label: Home page card
+        type: object
+        fields:
+          - name: area_tag
+            label: Area tag on photo
+            type: string
+          - name: image
+            label: Card photo (leave empty to use the main photo)
+            type: image
+          - name: image_alt
+            label: Card photo description
+            type: string
+          - name: blurb
+            label: Short description
+            type: text
+          - name: tags
+            label: Tags
+            type: string
+            list: true
+
+      - name: facts
+        label: Quick facts
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{label}: {value}"
+        fields:
+          - name: label
+            label: Label
+            type: string
+            description: "Region, Distance, Time, Climb, Grade, Walk type, Highlights, Map, Best season"
+          - name: value
+            label: Value
+            type: string
+
+      - name: intro
+        label: Intro paragraph
+        type: text
+
+      - name: getting_there
+        label: Getting there
+        type: object
+        fields:
+          - name: intro
+            label: Intro
+            type: text
+          - name: options
+            label: Access options
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{tag}: {heading}"
+            fields:
+              - name: tag
+                label: Tag (e.g. From Mudgee)
+                type: string
+              - name: heading
+                label: Heading
+                type: string
+              - name: text
+                label: Text (blank line = new paragraph)
+                type: text
+          - name: note
+            label: Conditions note (green box)
+            type: text
+
+      - name: walk_intro
+        label: The walk – intro
+        type: text
+
+      - name: stops
+        label: Route stops
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{index}. {heading}"
+        fields:
+          - name: kicker
+            label: Small label (Start, Highlight, About 1 km east…)
+            type: string
+          - name: heading
+            label: Heading
+            type: string
+          - name: text
+            label: Text (blank line = new paragraph)
+            type: text
+          - name: highlight
+            label: Highlight stop (darker dot)
+            type: boolean
+          - name: pills
+            label: Measurements
+            type: object
+            list: true
+            fields:
+              - name: label
+                type: string
+              - name: value
+                type: string
+          - name: image
+            label: Photo
+            type: image
+          - name: image_alt
+            label: Photo description (alt text)
+            type: string
+          - name: caption
+            label: Caption
+            type: string
+          - name: image_tall
+            label: Tall (portrait) photo
+            type: boolean
+
+      - name: map
+        label: Route map
+        type: object
+        fields:
+          - name: image
+            label: Map image
+            type: image
+          - name: alt
+            label: Map description
+            type: string
+          - name: caption
+            label: Caption
+            type: string
+          - name: gpx
+            label: GPX file (optional)
+            type: file
+
+      - name: band
+        label: Full-width photo band (optional)
+        type: object
+        fields:
+          - name: image
+            label: Photo
+            type: image
+          - name: quote
+            label: Line of text over the photo
+            type: string
+
+      - name: tips
+        label: Before you go
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{heading}"
+        fields:
+          - name: icon
+            label: Icon
+            type: select
+            options:
+              values:
+                - name: compass
+                  label: Compass (navigation)
+                - name: warning
+                  label: Warning (cliffs, hazards)
+                - name: water
+                  label: Water drop
+                - name: hand
+                  label: Hand (respect Country)
+                - name: phone
+                  label: Phone (tell someone)
+                - name: fire
+                  label: Fire
+                - name: car
+                  label: Car (access)
+                - name: sun
+                  label: Sun (season, heat)
+                - name: gate
+                  label: Gate (private land)
+                - name: info
+                  label: Info
+          - name: heading
+            label: Heading
+            type: string
+          - name: text
+            label: Text
+            type: text
+
+  - name: site
+    label: Home page
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: site_name
+        label: Site name
+        type: string
+      - name: eyebrow
+        label: Small label above title
+        type: string
+      - name: title_main
+        label: Title (plain part)
+        type: string
+      - name: title_em
+        label: Title (italic part)
+        type: string
+      - name: lede
+        label: Introduction
+        type: text
+      - name: meta_description
+        label: Search engine description
+        type: text
+      - name: hero_image
+        label: Main photo
+        type: image
+      - name: hero_alt
+        label: Main photo description
+        type: string
+      - name: walks_heading
+        label: Walks heading
+        type: string
+      - name: coming_soon
+        label: Show "More walks coming" card
+        type: boolean
+      - name: safety_heading
+        label: Safety box heading
+        type: string
+      - name: safety_text
+        label: Safety box text ([link text](https://…) makes a link)
+        type: text
+      - name: footer_left
+        label: Footer left
+        type: string
+      - name: footer_right
+        label: Footer right
+        type: string

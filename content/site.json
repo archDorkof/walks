@@ -1,0 +1,16 @@
+{
+  "site_name": "Bushwalks",
+  "eyebrow": "mawt.info",
+  "title_main": "Bush",
+  "title_em": "walks",
+  "meta_description": "A record of bushwalks around Mudgee, NSW: routes, maps, photos and tips.",
+  "lede": "A record of bushwalks around Mudgee, from the Gardens of Stone to the Capertee and beyond. Each one has a route description, map, photos and what you need to know before you go.",
+  "hero_image": "/media/mercurys-boot/stargate-tunnel.jpg",
+  "hero_alt": "Looking through a triangular sandstone tunnel towards ferns and forest",
+  "walks_heading": "The walks",
+  "coming_soon": true,
+  "safety_heading": "Walk at your own risk",
+  "safety_text": "Many of these walks are off-track and unmarked. Conditions change, so carry a map and compass or GPS, take plenty of water, tell someone your plans and check the [NSW National Parks alerts](https://www.nationalparks.nsw.gov.au/alert/state-alerts) before you go.",
+  "footer_left": "Bushwalks · mawt.info",
+  "footer_right": "Photos and route notes by the author"
+}
