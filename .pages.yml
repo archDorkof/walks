@@ -12,6 +12,7 @@ content:
     type: collection
     path: content/walks
     format: json
+    filename: "{primary}.json"
     view:
       fields: [title, area, published]
       primary: title
