@@ -1,11 +1,11 @@
 {
-  "title": "Mercurys Boot & the Stargate Tunnel",
+  "title": "Mercurys Boot & Stargate Tunnel",
   "slug": "mercurys-boot",
   "published": true,
   "order": 1,
   "area": "Gardens of Stone National Park",
-  "description": "An off-track loop along the Capertee cliffline in Gardens of Stone National Park, taking in Mercurys Boot, Baal Bone Gap, McLeans Pass and the Stargate Tunnel.",
   "lede": "An off-track loop along the Capertee cliffline: a boot-shaped rock high above the valley, an old Aboriginal route through the cliffs, and a hidden sandstone tunnel.",
+  "description": "An off-track loop along the Capertee cliffline in Gardens of Stone National Park, taking in Mercurys Boot, Baal Bone Gap, McLeans Pass and the Stargate Tunnel.",
   "hero_image": "/media/mercurys-boot/mercurys-boot.jpg",
   "hero_alt": "A bushwalker standing on top of Mercurys Boot, a boot-shaped sandstone rock on the Capertee cliffline",
   "card": {
@@ -13,14 +13,33 @@
     "image": "/media/mercurys-boot/mercurys-boot.jpg",
     "image_alt": "A walker on top of Mercurys Boot",
     "blurb": "An off-track loop along the Capertee cliffline: a boot-shaped rock above the valley, Baal Bone Gap, McLeans Pass and a hidden sandstone tunnel.",
-    "tags": ["Off-track", "Loop", "Navigation needed"]
+    "tags": [
+      "Off-track",
+      "Loop",
+      "Navigation needed"
+    ]
   },
   "facts": [
-    { "label": "Region", "value": "Capertee Valley rim, near Ben Bullen" },
-    { "label": "Walk type", "value": "Off-track loop" },
-    { "label": "Highlights", "value": "Mercurys Boot, Baal Bone Gap, Stargate Tunnel" },
-    { "label": "Map", "value": "Ben Bullen 8931-4S 1:25,000" },
-    { "label": "Navigation", "value": "Map & compass / GPS essential" }
+    {
+      "label": "Region",
+      "value": "Capertee Valley rim, near Ben Bullen"
+    },
+    {
+      "label": "Walk type",
+      "value": "Off-track loop"
+    },
+    {
+      "label": "Highlights",
+      "value": "Mercurys Boot, Baal Bone Gap, Stargate Tunnel"
+    },
+    {
+      "label": "Map",
+      "value": "Ben Bullen 8931-4S 1:25,000"
+    },
+    {
+      "label": "Navigation",
+      "value": "Map & compass / GPS essential"
+    }
   ],
   "intro": "High above the Capertee Valley, a great sandstone block leans out over the drop. From the right angle it looks just like a boot. This loop takes you along the escarpment to Mercurys Boot, down through Baal Bone Gap and on to McLeans Pass, where a triangular tunnel cuts straight through the rock.",
   "getting_there": {
@@ -45,7 +64,8 @@
       "kicker": "Start",
       "heading": "To the Capertee cliffline",
       "text": "Leave Moffitts Trail and head cross-country to the Capertee cliffline. When you reach the cliff edge, follow it down towards the valley. The escarpment guides you most of the way, and the views open up over the Capertee Valley as you go.",
-      "highlight": false
+      "highlight": false,
+      "image_tall": false
     },
     {
       "kicker": "Highlight",
@@ -54,19 +74,22 @@
       "highlight": true,
       "image": "/media/mercurys-boot/mercurys-boot.jpg",
       "image_alt": "A walker standing on top of Mercurys Boot against a clear blue sky",
-      "caption": "Standing on top of Mercurys Boot, high above the Capertee Valley"
+      "caption": "Standing on top of Mercurys Boot, high above the Capertee Valley",
+      "image_tall": false
     },
     {
       "kicker": "Through the cliffs",
       "heading": "Baal Bone Gap",
       "text": "Just below the Boot is Baal Bone Gap, a natural break in the cliffs and an easy way down into the valley. You may find water in one of the pipes at the Gap, but the tap may now be locked, so don't rely on it.",
-      "highlight": false
+      "highlight": false,
+      "image_tall": false
     },
     {
       "kicker": "About 1 km east",
       "heading": "McLeans Pass",
       "text": "From Baal Bone Gap, head east, roughly following the cliffline for a kilometre or so, until you reach McLeans Pass. There's a bit of a drop to get into the pass.",
-      "highlight": false
+      "highlight": false,
+      "image_tall": false
     },
     {
       "kicker": "Highlight",
@@ -74,9 +97,18 @@
       "text": "Once you're at the bottom of the pass, head a little south to the Stargate Tunnel. This triangular sandstone tunnel is one of the highlights of the walk.",
       "highlight": true,
       "pills": [
-        { "label": "Length", "value": "~20 m" },
-        { "label": "Width", "value": "~7 m" },
-        { "label": "Shape", "value": "Triangular" }
+        {
+          "label": "Length",
+          "value": "~20 m"
+        },
+        {
+          "label": "Width",
+          "value": "~7 m"
+        },
+        {
+          "label": "Shape",
+          "value": "Triangular"
+        }
       ],
       "image": "/media/mercurys-boot/stargate-tunnel.jpg",
       "image_alt": "Looking through the triangular Stargate Tunnel towards ferns and forest beyond",
@@ -87,7 +119,8 @@
       "kicker": "Finish",
       "heading": "Back along the ridge",
       "text": "From the Stargate Tunnel, climb back up to the ridgeline and follow it south until you reach the unnamed road. From there, the fire trails lead back to the Bicentennial National Trail and your car.",
-      "highlight": false
+      "highlight": false,
+      "image_tall": false
     }
   ],
   "map": {
