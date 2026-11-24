@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="walks.mawt.info" xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata><name>Mercurys Boot</name></metadata>
+  <wpt lat="-33.235300" lon="150.092010"><name>Mercurys Boot</name></wpt>
+  <trk>
+    <name>Mercurys Boot from Moffitts Trail ridge</name>
+    <trkseg>
+      <trkpt lat="-33.233985" lon="150.085119"/>
+      <trkpt lat="-33.232935" lon="150.085591"/>
+      <trkpt lat="-33.231867" lon="150.086031"/>
+      <trkpt lat="-33.231041" lon="150.086396"/>
+      <trkpt lat="-33.230512" lon="150.087007"/>
+      <trkpt lat="-33.229839" lon="150.087726"/>
+      <trkpt lat="-33.229533" lon="150.088649"/>
+      <trkpt lat="-33.229130" lon="150.089582"/>
+      <trkpt lat="-33.229112" lon="150.090247"/>
+      <trkpt lat="-33.229650" lon="150.090462"/>
+      <trkpt lat="-33.230233" lon="150.090687"/>
+      <trkpt lat="-33.230835" lon="150.090741"/>
+      <trkpt lat="-33.231571" lon="150.090870"/>
+      <trkpt lat="-33.232360" lon="150.090805"/>
+      <trkpt lat="-33.233249" lon="150.090537"/>
+      <trkpt lat="-33.234200" lon="150.090537"/>
+      <trkpt lat="-33.235053" lon="150.090966"/>
+      <trkpt lat="-33.235770" lon="150.091674"/>
+      <trkpt lat="-33.236085" lon="150.092179"/>
+      <trkpt lat="-33.236111" lon="150.092576"/>
+      <trkpt lat="-33.236479" lon="150.093498"/>
+      <trkpt lat="-33.236605" lon="150.093842"/>
+      <trkpt lat="-33.236838" lon="150.094346"/>
+      <trkpt lat="-33.237036" lon="150.094882"/>
+    </trkseg>
+  </trk>
+</gpx>
