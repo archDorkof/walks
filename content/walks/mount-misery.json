@@ -33,6 +33,10 @@
       "value": "About 2 hrs walking, 1 hr running"
     },
     {
+      "label": "Climb",
+      "value": "About 450 m total ascent"
+    },
+    {
       "label": "Grade",
       "value": "Grade 1 · Easy"
     },
@@ -42,14 +46,14 @@
     },
     {
       "label": "Highlights",
-      "value": "Mount Misery, views over Mudgee"
+      "value": "Mount Misery, views over Mudgee, the metal dinosaur"
     },
     {
       "label": "Map",
       "value": "Mudgee 8832-4N 1:25,000"
     }
   ],
-  "intro": "Mount Misery is the high ground right on Mudgee's western doorstep, and this is the quickest way up it. It's fire trail all the way from the edge of town, up and back the same way, so you can walk it or run it. It's short enough to fit in before or after work.",
+  "intro": "Mount Misery is the high ground right on Mudgee's western doorstep, and this is the quickest way up it. It's fire trail all the way from the edge of town, up and back the same way, so you can walk it or run it, with about 450 m of climbing. It's short enough to fit in before or after work.",
   "getting_there": {
     "intro": "The walk starts on Rifle Range Road at Glen Ayr, on the western edge of Mudgee, just west of Faucett Drive.",
     "options": [
@@ -85,6 +89,16 @@
       "heading": "Mount Misery Trail",
       "text": "At the radio mast, turn west onto the Mount Misery Trail. It follows the edge of Avisford Nature Reserve along the ridge to Mount Misery.",
       "highlight": false,
+      "image_tall": false
+    },
+    {
+      "kicker": "Side trip · near the top",
+      "heading": "The dinosaur",
+      "text": "At the intersection near the top, take a quick 200 m detour to find a metal dinosaur beside the track, then come back to the Mount Misery Trail.",
+      "highlight": false,
+      "image": "/media/mount-misery/metal-dinosaur.jpg",
+      "image_alt": "A rusty metal sculpture of a spiky-backed dinosaur sprawled among rocks beside a dirt fire trail in open eucalypt forest",
+      "caption": "The dinosaur, 200 m off the trail near the top",
       "image_tall": false
     },
     {
