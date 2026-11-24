@@ -190,12 +190,28 @@ Use the `.reveal` fade-up on scroll and the slow hero zoom. Both turn off under 
 
 ## 8. Maps
 
-- Every walk has a route map, saved as `images/route-map.jpg`.
-- Draw the route in orange (to match `--ochre`) on a NSW topographic base map.
+Every walk uses the same map format, set up as on Mercurys Boot. Each walk's `media/<walk-slug>/` folder holds four map files:
+
+| File | What it is |
+|---|---|
+| `<walk-slug>.gpx` | The route (drawn in CalTopo or recorded on a phone) |
+| `<sheet>-blank.pdf` | An A4 export of the NSW topo sheet around the walk at 1:25,000, with no route |
+| `<sheet>-route.pdf` | The same PDF with the route in orange, the start and key features marked, made with `tools/route_map.py` |
+| `route-map.jpg` | A crop of the route PDF around the route, made by the same tool |
+
+In Pages CMS these go under **Route map**: Map image, GPX file, Printable map with route, Printable map without route.
+
+On the page, the walk then shows an interactive NSW topographic map with four buttons:
+- **Hide route** turns off the route, labels and caption, leaving the plain topo map
+- **View larger map** opens `route-map.jpg` over the page
+- **Download PDF map** gives the route PDF while the route is shown, and the blank PDF while it's hidden
+- **Download GPX**
+
+Rules:
+- Draw the route in orange (to match `--ochre`).
 - The caption must name the map sheet and say the route is approximate: *Approximate route in orange. Base map: Ben Bullen 8931-4S topographic map.*
-- **Add a GPX file of the route whenever you have one** (Route map → GPX file in Pages CMS). The page then shows an interactive NSW topographic map with **Hide route**, **View larger map** (opens the Map image over the page), **Download PDF map** and **Download GPX** buttons. Hide route also hides the start and waypoint labels and the map caption. Without a GPX, the page shows the static map image.
-- Optionally add printable A4 maps as PDFs (Route map → Printable map with route / without route). The Download PDF map button gives the route version while the route is shown, and the blank version while it's hidden. Name them `<sheet>-route.pdf` and `<sheet>-blank.pdf`, e.g. `ben-bullen-route.pdf`.
-- When the site builds, it prints each GPX route's length and total ascent (`GPX route: 4.2 km, 310 m total ascent`). Use these for the Distance and Climb quick facts.
+- Take the Distance quick fact from the GPX. `tools/route_map.py` and `node build.mjs` both print the route length. A GPX drawn in CalTopo has no heights, so take the Climb from CalTopo's elevation profile.
+- A walk without a GPX falls back to the static map image with a download button. Use this only until the GPX is ready.
 
 ---
 
