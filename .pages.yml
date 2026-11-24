@@ -4,7 +4,7 @@
 media:
   input: media
   output: /media
-  extensions: [jpg, jpeg, png, webp, gpx]
+  extensions: [jpg, jpeg, png, webp, gpx, pdf]
 
 content:
   - name: walks
@@ -181,6 +181,12 @@ content:
             type: string
           - name: gpx
             label: GPX file (optional)
+            type: file
+          - name: pdf
+            label: Printable map with route (PDF, optional)
+            type: file
+          - name: pdf_blank
+            label: Printable map without route (PDF, optional)
             type: file
 
       - name: band
