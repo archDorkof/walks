@@ -48,6 +48,79 @@ const FONTS = `<link rel="preconnect" href="https://fonts.googleapis.com">
 const REVEAL_JS = `const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));`;
 
+// ---------- route map ----------
+// With a GPX file: an interactive NSW topo map with a "Show suggested route" toggle.
+// Without one: the static map image. Either way, download links for the files.
+function mapPanel(m) {
+  if (!m || !(m.image || m.gpx)) return '';
+  const downloads = [
+    m.gpx ? `<a class="gpx" href="${esc(m.gpx)}" download>Download GPX</a>` : '',
+    m.image ? `<a class="gpx alt" href="${esc(m.image)}" download>Download map</a>` : ''
+  ].join('\n        ');
+  if (m.gpx) return `<aside class="map-panel reveal">
+      <div class="topo-wrap">
+        <div class="topo" data-gpx="${esc(m.gpx)}" role="region" aria-label="${esc(m.alt || 'Interactive topographic map of the route')}"></div>
+        <label class="route-toggle"><input type="checkbox" checked> Show suggested route</label>
+        ${m.caption ? `<p class="map-caption">${esc(m.caption)}</p>` : ''}
+      </div>
+      <div class="downloads">
+        ${downloads}
+      </div>
+    </aside>`;
+  return `<aside class="map-panel reveal">
+      <figure data-full="${esc(m.image)}">
+        <img src="${esc(m.image)}" alt="${esc(m.alt)}">
+        ${m.caption ? `<figcaption>${esc(m.caption)}</figcaption>` : ''}
+      </figure>
+      <div class="downloads">
+        ${downloads}
+      </div>
+    </aside>`;
+}
+
+const LEAFLET_CSS = '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">';
+const LEAFLET_JS = '<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>';
+
+// NSW Spatial Services topographic basemap (CC BY 4.0) + the GPX route in ochre.
+const TOPO_JS = `document.querySelectorAll('.topo[data-gpx]').forEach(async el => {
+    const map = L.map(el, { scrollWheelZoom: false });
+    L.tileLayer('https://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
+      maxNativeZoom: 16, maxZoom: 18,
+      attribution: '&copy; <a href="https://www.spatial.nsw.gov.au" target="_blank" rel="noopener">Spatial Services NSW</a>'
+    }).addTo(map);
+    map.setView([-33.2, 150.1], 13);
+    const xml = new DOMParser().parseFromString(await (await fetch(el.dataset.gpx)).text(), 'application/xml');
+    const pts = el => [...el.querySelectorAll('trkpt, rtept')].map(p => [+p.getAttribute('lat'), +p.getAttribute('lon')]);
+    const lines = [...xml.querySelectorAll('trkseg, rte')].map(pts).filter(l => l.length > 1);
+    const route = L.featureGroup(lines.map(l => L.polyline(l, { color: '#c4672d', weight: 5, opacity: .9 })));
+    if (lines.length) L.circleMarker(lines[0][0], { radius: 7, color: '#fff', weight: 2, fillColor: '#7a3416', fillOpacity: 1 }).bindTooltip('Start').addTo(route);
+    xml.querySelectorAll('wpt').forEach(w => L.circleMarker([+w.getAttribute('lat'), +w.getAttribute('lon')], { radius: 6, color: '#fff', weight: 2, fillColor: '#c4672d', fillOpacity: 1 })
+      .bindTooltip(w.querySelector('name')?.textContent || '').addTo(route));
+    route.addTo(map);
+    if (lines.length) map.fitBounds(route.getBounds(), { padding: [24, 24] });
+    el.parentElement.querySelector('.route-toggle input').addEventListener('change', e => e.target.checked ? route.addTo(map) : route.remove());
+  });`;
+
+// Distance and climb from a GPX file, printed when the site builds (to fill in the quick facts).
+function gpxStats(file) {
+  const xml = fs.readFileSync(file, 'utf8');
+  const segs = [...xml.matchAll(/<(trkseg|rte)\b[\s\S]*?<\/\1>/g)].map(m =>
+    [...m[0].matchAll(/<(?:trkpt|rtept)\b([^>]*?)\/>|<(?:trkpt|rtept)\b([^>]*)>([\s\S]*?)<\/(?:trkpt|rtept)>/g)].map(p => {
+      const a = p[1] || p[2] || '';
+      const ele = /<ele>([^<]+)<\/ele>/.exec(p[3] || '');
+      return { lat: +/lat="([^"]+)"/.exec(a)[1], lon: +/lon="([^"]+)"/.exec(a)[1], ele: ele ? +ele[1] : null };
+    }));
+  const R = 6371000, rad = d => d * Math.PI / 180;
+  let dist = 0, up = 0;
+  for (const seg of segs) for (let i = 1; i < seg.length; i++) {
+    const a = seg[i - 1], b = seg[i];
+    const h = Math.sin(rad(b.lat - a.lat) / 2) ** 2 + Math.cos(rad(a.lat)) * Math.cos(rad(b.lat)) * Math.sin(rad(b.lon - a.lon) / 2) ** 2;
+    dist += 2 * R * Math.asin(Math.sqrt(h));
+    if (a.ele != null && b.ele != null && b.ele > a.ele) up += b.ele - a.ele;
+  }
+  return { km: (dist / 1000).toFixed(1), climb: Math.round(up), hasEle: segs.some(s => s.some(p => p.ele != null)) };
+}
+
 // ---------- walk page ----------
 function walkPage(w) {
   const gt = w.getting_there || {};
@@ -75,6 +148,7 @@ function walkPage(w) {
 <meta property="og:description" content="${esc(w.description)}">
 ${w.hero_image ? `<meta property="og:image" content="${esc(w.hero_image)}">` : ''}
 ${FONTS}
+${w.map && w.map.gpx ? LEAFLET_CSS : ''}
 <link rel="stylesheet" href="/assets/walk.css">
 </head>
 <body>
@@ -125,13 +199,7 @@ ${w.intro ? `<section>
     <ol class="timeline">${stops}
     </ol>
 
-    ${w.map && w.map.image ? `<aside class="map-panel reveal">
-      <figure data-full="${esc(w.map.image)}">
-        <img src="${esc(w.map.image)}" alt="${esc(w.map.alt)}">
-        ${w.map.caption ? `<figcaption>${esc(w.map.caption)}</figcaption>` : ''}
-      </figure>
-      ${w.map.gpx ? `<a class="gpx" href="${esc(w.map.gpx)}" download>Download GPX</a>` : ''}
-    </aside>` : ''}
+    ${mapPanel(w.map)}
   </div>
 </section>
 
@@ -181,6 +249,10 @@ ${w.band && w.band.image ? `<div class="band reveal">
   lb.addEventListener('click', close);
   document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
 </script>
+${w.map && w.map.gpx ? `${LEAFLET_JS}
+<script>
+  ${TOPO_JS}
+</script>` : ''}
 </body>
 </html>
 `;
@@ -290,6 +362,11 @@ for (const w of walks) {
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, 'index.html'), walkPage(w));
   console.log(`  built /${w.slug}/`);
+  const gpx = w.map && w.map.gpx && path.join(ROOT, w.map.gpx.replace(/^\//, ''));
+  if (gpx && fs.existsSync(gpx)) {
+    const g = gpxStats(gpx);
+    console.log(`    GPX route: ${g.km} km${g.hasEle ? `, ${g.climb} m total ascent` : ' (no elevation data)'}`);
+  }
 }
 fs.writeFileSync(path.join(OUT, 'index.html'), homePage(site, walks));
 console.log('  built / (home)');
