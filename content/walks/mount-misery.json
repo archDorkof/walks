@@ -1,11 +1,11 @@
 {
-  "title": "Mount Misery via Rifle Range Road",
+  "title": "Mount Misery",
   "slug": "mount-misery",
   "published": true,
   "order": 3,
   "area": "Western edge of Mudgee",
   "lede": "A quick up-and-back climb on fire trail from the edge of town to Mount Misery, short enough to walk or run before or after work.",
-  "description": "An 8.8 km return climb on fire trail from Rifle Range Road at Glen Ayr, on the western edge of Mudgee, to the communication tower on Mount Misery. Short enough to walk or run before or after work.",
+  "description": "An 8.8 km return climb on fire trail from Rifle Range Road, on the western edge of Mudgee, to the communication tower on Mount Misery. Short enough to walk or run before or after work.",
   "hero_image": "/media/mount-misery/dawn-over-mudgee.jpg",
   "hero_alt": "The lights of Mudgee at dawn under a low bank of fog, with a range of hills silhouetted against an orange and pink sky",
   "card": {
@@ -22,7 +22,7 @@
   "facts": [
     {
       "label": "Region",
-      "value": "Western edge of Mudgee, Glen Ayr"
+      "value": "Western edge of Mudgee"
     },
     {
       "label": "Distance",
@@ -55,17 +55,17 @@
   ],
   "intro": "Mount Misery is the high ground right on Mudgee's western doorstep, and this is the quickest way up it. It's fire trail all the way from the edge of town, up and back the same way, so you can walk it or run it, with about 450 m of climbing. It's short enough to fit in before or after work.",
   "getting_there": {
-    "intro": "The walk starts on Rifle Range Road at Glen Ayr, on the western edge of Mudgee, just west of Faucett Drive.",
+    "intro": "The walk starts on Rifle Range Road on the western edge of Mudgee. Make sure you take the gate that heads towards Telstra Towers. ",
     "options": [
       {
         "tag": "From Mudgee",
-        "heading": "Rifle Range Road, Glen Ayr",
-        "text": "Head out along Rifle Range Road. On the south side there are two gates: go past the first and park outside the second, which has a \"Shut the Gate, Mate\" sign. The second gate is the access road to the towers, not the road to the rifle range."
+        "heading": "Rifle Range Road",
+        "text": "Head out along Rifle Range Road. On the south side there are two gates: go past the first and park outside the second, which has a \"Shut the Gate, Mate\" sign. This second gate is the access road to the Telstra Towers, not the road to the rifle range."
       }
     ],
     "note": "The way up crosses private property, so stay on the fire trail and leave the gate as you found it."
   },
-  "walk_intro": "The route follows the fire trail south from Rifle Range Road, climbs past the Translator and the communication towers, then follows the Mount Misery Trail west to the communication tower on Mount Misery. It's about 4.4 km each way on fire trail, with a few steep sections, and you come back the same way. For a longer day, the [Misery Traverse](/misery-traverse/) carries on from the top along the ridge to Hill End Road.",
+  "walk_intro": "The route follows the fire trail south from Rifle Range Road, climbs past the first group of communication towers, then follows the Mount Misery Trail west to the communication tower on Mount Misery. It's about 4.4 km each way on fire trail, with a few steep sections. For a longer day, the [Misery Traverse](/misery-traverse/) carries on from the top along the ridge to Hill End Road.",
   "stops": [
     {
       "kicker": "Start",
@@ -76,8 +76,8 @@
     },
     {
       "kicker": "Highlight · about 1.5 km",
-      "heading": "The Translator",
-      "text": "The fire trail climbs steadily to the Translator and the communication towers on the first spur, then swings south along the ridge towards the radio mast. As you gain height, the views open up across the valley.",
+      "heading": "Telstra Towers",
+      "text": "The fire trail climbs steadily to the first group of communication towers on the first spur, then swings south along the ridge towards the radio mast. As you gain height, the views open up across the valley.",
       "highlight": true,
       "image": "/media/mount-misery/view-from-the-misery-climb.jpg",
       "image_alt": "A walker in a red shirt looking through the eucalypts to a valley of farmland and hills lit orange by the low sun",
@@ -85,16 +85,9 @@
       "image_tall": false
     },
     {
-      "kicker": "About 2.8 km",
-      "heading": "Mount Misery Trail",
-      "text": "At the radio mast, turn west onto the Mount Misery Trail. It follows the edge of Avisford Nature Reserve along the ridge to Mount Misery.",
-      "highlight": false,
-      "image_tall": false
-    },
-    {
-      "kicker": "Side trip · near the top",
+      "kicker": "Side trip · near the top intersection ",
       "heading": "The dinosaur",
-      "text": "At the intersection near the top, take a quick 200 m detour to find a metal dinosaur beside the track, then come back to the Mount Misery Trail.",
+      "text": "At the intersection near the top, take a quick 200 m detour to the left to find a metal dinosaur beside the track, then come back to the Mount Misery Trail.",
       "highlight": false,
       "image": "/media/mount-misery/metal-dinosaur.jpg",
       "image_alt": "A rusty metal sculpture of a spiky-backed dinosaur sprawled among rocks beside a dirt fire trail in open eucalypt forest",
@@ -129,10 +122,6 @@
     "gpx": "/media/mount-misery/mount-misery.gpx",
     "pdf": "/media/mount-misery/mudgee-route.pdf",
     "pdf_blank": "/media/mount-misery/mudgee-blank.pdf"
-  },
-  "band": {
-    "image": "",
-    "quote": ""
   },
   "tips": [
     {
