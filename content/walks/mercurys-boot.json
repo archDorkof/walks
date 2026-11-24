@@ -4,8 +4,8 @@
   "published": true,
   "order": 1,
   "area": "Gardens of Stone National Park",
-  "lede": "A short but steep walk through thick scrub to a boot-shaped rock on the Capertee cliffline, which you can climb from the toe.",
-  "description": "A short, steep, partly off-track walk through scrub to Mercurys Boot, a boot-shaped sandstone rock on the Capertee cliffline near Baal Bone Gap in Gardens of Stone National Park.",
+  "lede": "A short but steep walk through very thick scrub to a boot-shaped rock on the Capertee cliffline, which you can climb from the toe.",
+  "description": "A short, steep, off-track walk through scrub to Mercurys Boot, a boot-shaped sandstone rock on the Capertee cliffline near Baal Bone Gap in Gardens of Stone National Park.",
   "hero_image": "/media/mercurys-boot/view-from-the-boot.jpg",
   "hero_alt": "A walker on the rocks beside Mercurys Boot looking out over a forested valley ringed by sandstone cliffs",
   "card": {
@@ -15,7 +15,7 @@
     "blurb": "A short but steep walk through thick scrub to a boot-shaped rock on the Capertee cliffline. Climb it from the toe.",
     "tags": [
       "Short",
-      "Partly off-track",
+      "Off-track",
       "Scrub & scrambling"
     ]
   },
@@ -30,11 +30,11 @@
     },
     {
       "label": "Grade",
-      "value": "Grade 3 · Hard"
+      "value": "Grade 4 · Very hard"
     },
     {
       "label": "Walk type",
-      "value": "Partly off-track; Return, or loop back via the fire trail"
+      "value": "Off-track; Return, or loop back via the fire trail"
     },
     {
       "label": "Highlights",
@@ -80,10 +80,10 @@
       "heading": "Bushbash to the cliffline",
       "text": "Whichever way you come, expect lots of scrub. From Baal Bone Gap it's very steep, with some rock scrambling through the cliffs. Once you reach the cliffline, follow it and the views open up over the Capertee Valley.",
       "highlight": false,
-      "image_tall": true,
       "image": "/media/mercurys-boot/thick-scrub.jpg",
       "image_alt": "Two walkers pushing uphill through dense young eucalypts and scrub",
-      "caption": "Thick scrub on the way to the cliffline"
+      "caption": "Thick scrub on the way to the cliffline",
+      "image_tall": true
     },
     {
       "kicker": "Highlight",
@@ -131,6 +131,10 @@
     "pdf": "/media/mercurys-boot/ben-bullen-route.pdf",
     "pdf_blank": "/media/mercurys-boot/ben-bullen-blank.pdf"
   },
+  "band": {
+    "image": "/media/mercurys-boot/getting-the-boot.jpg",
+    "quote": "Don't leave without your kicking picture."
+  },
   "tips": [
     {
       "icon": "compass",
@@ -157,9 +161,5 @@
       "heading": "Tell someone",
       "text": "Leave your plans with someone, and think about carrying a PLB. There's very little phone coverage out there."
     }
-  ],
-  "band": {
-    "image": "/media/mercurys-boot/getting-the-boot.jpg",
-    "quote": "Don't leave without your kicking picture."
-  }
+  ]
 }
