@@ -26,7 +26,7 @@
     },
     {
       "label": "Distance",
-      "value": "About 2 km from the Moffitts Trail ridge; under 500 m from Baal Bone Gap"
+      "value": "About 2 km one way from the Moffitts Trail ridge; under 500 m from Baal Bone Gap"
     },
     {
       "label": "Grade",
@@ -34,7 +34,7 @@
     },
     {
       "label": "Walk type",
-      "value": "Partly off-track; Return"
+      "value": "Partly off-track; Return, or loop back via the fire trail"
     },
     {
       "label": "Highlights",
@@ -94,8 +94,8 @@
     },
     {
       "kicker": "Finish",
-      "heading": "Back the way you came",
-      "text": "Retrace your steps along the cliffline and back through the scrub to your car.",
+      "heading": "Back to the car",
+      "text": "Retrace your steps the way you came, or make a loop by returning to your car along the fire trail.",
       "highlight": false,
       "image_tall": false
     }
