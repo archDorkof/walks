@@ -109,7 +109,7 @@ const TOPO_JS = `document.querySelectorAll('.topo[data-gpx]').forEach(async el =
       btn.setAttribute('aria-pressed', show);
       btn.textContent = show ? 'Hide route' : 'Show route';
       if (pdf) pdf.href = show ? pdf.dataset.route : pdf.dataset.blank;
-      const cap = panel.querySelector('.map-caption'); if (cap) cap.hidden = !show;
+      const cap = panel.querySelector('.map-caption'); if (cap) cap.style.visibility = show ? '' : 'hidden';
     });
   });`;
 
