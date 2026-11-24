@@ -4,19 +4,19 @@
   "published": true,
   "order": 2,
   "area": "Western edge of Mudgee",
-  "lede": "A one-way traverse from the western edge of Mudgee, up over Mount Misery and north along the ridge to Caerleon.",
-  "description": "An 11.9 km one-way traverse from Rifle Range Road on the western edge of Mudgee, over Mount Misery and north along the ridge above Avisford Nature Reserve to the Castlereagh Highway at Caerleon.",
+  "lede": "A one-way traverse from the western edge of Mudgee, up over Mount Misery and along the ridge to Hill End Road, with big views over town.",
+  "description": "An 11.9 km one-way traverse from Rifle Range Road on the western edge of Mudgee, over Mount Misery and north along the ridge above Avisford Nature Reserve to Hill End Road near Caerleon.",
   "hero_image": "/media/misery-traverse/route-map.jpg",
-  "hero_alt": "Topographic map showing the Misery Traverse route from Glen Ayr over Mount Misery and north along the ridge to Caerleon",
+  "hero_alt": "Topographic map showing the Misery Traverse route from Glen Ayr over Mount Misery and north along the ridge to Hill End Road",
   "card": {
     "area_tag": "Mudgee",
     "image": "/media/misery-traverse/route-map.jpg",
     "image_alt": "Topographic map of the Misery Traverse route on the western edge of Mudgee",
-    "blurb": "A one-way traverse from the edge of town, up over Mount Misery and north along the ridge to Caerleon.",
+    "blurb": "A half-day traverse from the edge of town, up over Mount Misery and along the ridge to Hill End Road. Great views of Mudgee.",
     "tags": [
       "One way",
-      "11.9 km",
-      "Close to town"
+      "Half day",
+      "Views of Mudgee"
     ]
   },
   "facts": [
@@ -30,7 +30,11 @@
     },
     {
       "label": "Time",
-      "value": "[X] hrs"
+      "value": "About half a day"
+    },
+    {
+      "label": "Climb",
+      "value": "About 600 m total ascent"
     },
     {
       "label": "Grade",
@@ -38,18 +42,18 @@
     },
     {
       "label": "Walk type",
-      "value": "[X]; One way (car shuffle)"
+      "value": "Fire trail, then partly off-track; One way (car shuffle)"
     },
     {
       "label": "Highlights",
-      "value": "Mount Misery, the ridge above Avisford Nature Reserve"
+      "value": "Mount Misery, views over Mudgee, the ridge above Avisford Nature Reserve"
     },
     {
       "label": "Map",
       "value": "Mudgee 8832-4N 1:25,000"
     }
   ],
-  "intro": "Mount Misery is the high ground right on Mudgee's western doorstep. This traverse starts on the edge of town, climbs onto it along the Mount Misery Trail, then follows the long ridge north above Avisford Nature Reserve to finish at the Castlereagh Highway near Caerleon. [X: what makes it worth doing, in Matt's words]",
+  "intro": "Mount Misery is the high ground right on Mudgee's western doorstep. This traverse starts on the edge of town, climbs onto it along the fire trail, then follows the long ridge north above Avisford Nature Reserve to finish on Hill End Road. It takes about half a day, with about 600 m of climbing and great views of Mudgee from up high.",
   "getting_there": {
     "intro": "This is a one-way walk, so you'll need a car at each end. The start and finish are about 4 km apart in a straight line.",
     "options": [
@@ -60,32 +64,32 @@
       },
       {
         "tag": "Finish",
-        "heading": "Castlereagh Highway, Caerleon",
-        "text": "The walk finishes on the Castlereagh Highway near the Blain Road turn-off at Caerleon, north-west of town. Leave a car here before you start. [X: where to park]"
+        "heading": "Hill End Road, Caerleon",
+        "text": "The walk finishes on Hill End Road near the Blain Road turn-off at Caerleon, north-west of town. Leave a car here before you start. [X: where to park]"
       }
     ],
-    "note": "[X: access or land notes, e.g. private property and permission, gates]"
+    "note": "The way up crosses private property, so stay on the fire trail. Near the end, head through the tip to keep off private land."
   },
-  "walk_intro": "The route heads south from the edge of town to pick up the Mount Misery Trail, climbs over Mount Misery, then follows the ridge north for most of the way to Caerleon. [X: track or off-track, and conditions underfoot]",
+  "walk_intro": "The route heads south from the edge of town on the fire trail to pick up the Mount Misery Trail, climbs over Mount Misery, then follows the ridge north for most of the way to Hill End Road. It's about 600 m of climbing in all. Navigation gets a bit tricky towards the end.",
   "stops": [
     {
       "kicker": "Start",
       "heading": "Rifle Range Road",
-      "text": "Set off from Rifle Range Road at Glen Ayr and head south, away from town, towards the hills. [X]",
+      "text": "Set off from Rifle Range Road at Glen Ayr and head south on the fire trail, away from town and towards the hills. This first part crosses private property, so stay on the fire trail.",
       "highlight": false,
       "image_tall": false
     },
     {
       "kicker": "About 4 km",
       "heading": "Mount Misery Trail",
-      "text": "Join the Mount Misery Trail and follow it west past the communication tower, where the climb onto Mount Misery begins. [X]",
+      "text": "Join the Mount Misery Trail and follow it west past the communication tower, where the climb onto Mount Misery begins.",
       "highlight": false,
       "image_tall": false
     },
     {
       "kicker": "Highlight · about 6 km",
       "heading": "Mount Misery",
-      "text": "[X: what the top is like and what you can see from it]",
+      "text": "From up high there are great views of Mudgee spread out below. [X: anything else about the top]",
       "highlight": true,
       "image_tall": false
     },
@@ -98,15 +102,15 @@
     },
     {
       "kicker": "Finish",
-      "heading": "Castlereagh Highway, Caerleon",
-      "text": "Drop off the north end of the ridge to finish on the Castlereagh Highway near Caerleon, where your second car is waiting. [X]",
+      "heading": "Hill End Road, Caerleon",
+      "text": "Towards the end, navigation can be a bit tricky. To keep off private property, head down through the tip to Hill End Road, where your second car is waiting. You may still come across a fence or two.\n\nThere's also an exit onto Old Grattai Road, but it goes through private property, so try to avoid it.",
       "highlight": false,
       "image_tall": false
     }
   ],
   "map": {
     "image": "/media/misery-traverse/route-map.jpg",
-    "alt": "Topographic map showing the route from Rifle Range Road at Glen Ayr, along the Mount Misery Trail, over Mount Misery and north along the ridge to the Castlereagh Highway at Caerleon",
+    "alt": "Topographic map showing the route from Rifle Range Road at Glen Ayr, along the Mount Misery Trail, over Mount Misery and north along the ridge to Hill End Road at Caerleon",
     "caption": "Approximate route in orange. Base map: Mudgee 8832-4N topographic map.",
     "gpx": "/media/misery-traverse/misery-traverse.gpx",
     "pdf": "/media/misery-traverse/mudgee-route.pdf",
@@ -120,17 +124,17 @@
     {
       "icon": "compass",
       "heading": "Navigation",
-      "text": "[X: is the ridge section off-track and unmarked?] Carry a map and compass or GPS, and know how to use them."
+      "text": "The way up follows fire trails, but navigation gets a bit tricky towards the end. Carry a map and compass or GPS, and know how to use them."
     },
     {
       "icon": "gate",
       "heading": "Private land",
-      "text": "[X: does the route cross private property? If so, get the landholder's permission before you go.]"
+      "text": "The route crosses private property on the way up, so stay on the fire trail. At the end, head through the tip rather than across private land, and avoid the exit onto Old Grattai Road, which goes through private property. You may come across a fence or two."
     },
     {
       "icon": "water",
       "heading": "Water",
-      "text": "Carry all the water you'll need. [X: any water on the way?]"
+      "text": "There's no water on the walk. Carry all you'll need."
     },
     {
       "icon": "hand",
@@ -140,7 +144,7 @@
     {
       "icon": "phone",
       "heading": "Tell someone",
-      "text": "Leave your plans with someone. [X: phone coverage along the ridge]"
+      "text": "Leave your plans with someone. There's good phone coverage along the way."
     }
   ]
 }
