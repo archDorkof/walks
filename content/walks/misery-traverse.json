@@ -1,0 +1,146 @@
+{
+  "title": "Misery Traverse",
+  "slug": "misery-traverse",
+  "published": true,
+  "order": 2,
+  "area": "Western edge of Mudgee",
+  "lede": "A one-way traverse from the western edge of Mudgee, up over Mount Misery and north along the ridge to Caerleon.",
+  "description": "An 11.9 km one-way traverse from Rifle Range Road on the western edge of Mudgee, over Mount Misery and north along the ridge above Avisford Nature Reserve to the Castlereagh Highway at Caerleon.",
+  "hero_image": "/media/misery-traverse/route-map.jpg",
+  "hero_alt": "Topographic map showing the Misery Traverse route from Glen Ayr over Mount Misery and north along the ridge to Caerleon",
+  "card": {
+    "area_tag": "Mudgee",
+    "image": "/media/misery-traverse/route-map.jpg",
+    "image_alt": "Topographic map of the Misery Traverse route on the western edge of Mudgee",
+    "blurb": "A one-way traverse from the edge of town, up over Mount Misery and north along the ridge to Caerleon.",
+    "tags": [
+      "One way",
+      "11.9 km",
+      "Close to town"
+    ]
+  },
+  "facts": [
+    {
+      "label": "Region",
+      "value": "Western edge of Mudgee, Glen Ayr to Caerleon"
+    },
+    {
+      "label": "Distance",
+      "value": "About 11.9 km one way"
+    },
+    {
+      "label": "Time",
+      "value": "[X] hrs"
+    },
+    {
+      "label": "Grade",
+      "value": "Grade [X] · [X]"
+    },
+    {
+      "label": "Walk type",
+      "value": "[X]; One way (car shuffle)"
+    },
+    {
+      "label": "Highlights",
+      "value": "Mount Misery, the ridge above Avisford Nature Reserve"
+    },
+    {
+      "label": "Map",
+      "value": "Mudgee 8832-4N 1:25,000"
+    }
+  ],
+  "intro": "Mount Misery is the high ground right on Mudgee's western doorstep. This traverse starts on the edge of town, climbs onto it along the Mount Misery Trail, then follows the long ridge north above Avisford Nature Reserve to finish at the Castlereagh Highway near Caerleon. [X: what makes it worth doing, in Matt's words]",
+  "getting_there": {
+    "intro": "This is a one-way walk, so you'll need a car at each end. The start and finish are about 4 km apart in a straight line.",
+    "options": [
+      {
+        "tag": "Start",
+        "heading": "Rifle Range Road, Glen Ayr",
+        "text": "The walk starts on Rifle Range Road at Glen Ayr, on the western edge of Mudgee, just west of Faucett Drive. [X: where to park]"
+      },
+      {
+        "tag": "Finish",
+        "heading": "Castlereagh Highway, Caerleon",
+        "text": "The walk finishes on the Castlereagh Highway near the Blain Road turn-off at Caerleon, north-west of town. Leave a car here before you start. [X: where to park]"
+      }
+    ],
+    "note": "[X: access or land notes, e.g. private property and permission, gates]"
+  },
+  "walk_intro": "The route heads south from the edge of town to pick up the Mount Misery Trail, climbs over Mount Misery, then follows the ridge north for most of the way to Caerleon. [X: track or off-track, and conditions underfoot]",
+  "stops": [
+    {
+      "kicker": "Start",
+      "heading": "Rifle Range Road",
+      "text": "Set off from Rifle Range Road at Glen Ayr and head south, away from town, towards the hills. [X]",
+      "highlight": false,
+      "image_tall": false
+    },
+    {
+      "kicker": "About 4 km",
+      "heading": "Mount Misery Trail",
+      "text": "Join the Mount Misery Trail and follow it west past the communication tower, where the climb onto Mount Misery begins. [X]",
+      "highlight": false,
+      "image_tall": false
+    },
+    {
+      "kicker": "Highlight · about 6 km",
+      "heading": "Mount Misery",
+      "text": "[X: what the top is like and what you can see from it]",
+      "highlight": true,
+      "image_tall": false
+    },
+    {
+      "kicker": "Highlight",
+      "heading": "The ridge north",
+      "text": "From Mount Misery, the route follows the long ridge north, keeping west of Avisford Nature Reserve, for about 6 km. [X: views, scrub, rock]",
+      "highlight": true,
+      "image_tall": false
+    },
+    {
+      "kicker": "Finish",
+      "heading": "Castlereagh Highway, Caerleon",
+      "text": "Drop off the north end of the ridge to finish on the Castlereagh Highway near Caerleon, where your second car is waiting. [X]",
+      "highlight": false,
+      "image_tall": false
+    }
+  ],
+  "map": {
+    "image": "/media/misery-traverse/route-map.jpg",
+    "alt": "Topographic map showing the route from Rifle Range Road at Glen Ayr, along the Mount Misery Trail, over Mount Misery and north along the ridge to the Castlereagh Highway at Caerleon",
+    "caption": "Approximate route in orange. Base map: Mudgee 8832-4N topographic map.",
+    "gpx": "/media/misery-traverse/misery-traverse.gpx",
+    "pdf": "/media/misery-traverse/mudgee-route.pdf",
+    "pdf_blank": "/media/misery-traverse/mudgee-blank.pdf"
+  },
+  "band": {
+    "image": "",
+    "quote": ""
+  },
+  "tips": [
+    {
+      "icon": "compass",
+      "heading": "Navigation",
+      "text": "[X: is the ridge section off-track and unmarked?] Carry a map and compass or GPS, and know how to use them."
+    },
+    {
+      "icon": "gate",
+      "heading": "Private land",
+      "text": "[X: does the route cross private property? If so, get the landholder's permission before you go.]"
+    },
+    {
+      "icon": "water",
+      "heading": "Water",
+      "text": "Carry all the water you'll need. [X: any water on the way?]"
+    },
+    {
+      "icon": "hand",
+      "heading": "Respect the Country",
+      "text": "This is Wiradjuri Country. Look, but don't touch. Leave no trace."
+    },
+    {
+      "icon": "phone",
+      "heading": "Tell someone",
+      "text": "Leave your plans with someone. [X: phone coverage along the ridge]"
+    }
+  ]
+}
