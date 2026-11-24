@@ -30,7 +30,7 @@
     },
     {
       "label": "Time",
-      "value": "[X]"
+      "value": "About 2 hrs walking, 1 hr running"
     },
     {
       "label": "Grade",
@@ -56,17 +56,17 @@
       {
         "tag": "From Mudgee",
         "heading": "Rifle Range Road, Glen Ayr",
-        "text": "[X] Where to park on Rifle Range Road."
+        "text": "Head out along Rifle Range Road. On the south side there are two gates: go past the first and park outside the second, which has a \"Shut the Gate, Mate\" sign. The second gate is the access road to the towers, not the road to the rifle range."
       }
     ],
-    "note": "The way up crosses private property, so stay on the fire trail."
+    "note": "The way up crosses private property, so stay on the fire trail and leave the gate as you found it."
   },
   "walk_intro": "The route follows the fire trail south from Rifle Range Road, climbs past the Translator and the communication towers, then follows the Mount Misery Trail west to the communication tower on Mount Misery. It's about 4.4 km each way, and you come back the same way. For a longer day, the [Misery Traverse](/misery-traverse/) carries on from the top along the ridge to Hill End Road.",
   "stops": [
     {
       "kicker": "Start",
       "heading": "Rifle Range Road",
-      "text": "Set off from Rifle Range Road at Glen Ayr and head south on the fire trail, away from town and towards the hills. This first part crosses private property, so stay on the fire trail.",
+      "text": "Go through the second gate, the one with the \"Shut the Gate, Mate\" sign, and head south on the access road to the towers, away from town and towards the hills. This first part crosses private property, so stay on the track.",
       "highlight": false,
       "image_tall": false
     },
@@ -126,7 +126,7 @@
     {
       "icon": "gate",
       "heading": "Private land",
-      "text": "The route crosses private property on the way up, so stay on the fire trail."
+      "text": "The route crosses private property on the way up, so stay on the fire trail. Shut the gate behind you."
     },
     {
       "icon": "water",
