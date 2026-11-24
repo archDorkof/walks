@@ -102,9 +102,11 @@
   ],
   "map": {
     "image": "/media/mercurys-boot/route-map.jpg",
-    "alt": "Topographic map showing the routes to Mercurys Boot from Moffitts Trail and from Baal Bone Gap",
+    "alt": "Topographic map showing the route from the Moffitts Trail ridge along the cliffline to Mercurys Boot and down to Baal Bone Gap",
     "caption": "Approximate route in orange. Base map: Ben Bullen 8931-4S topographic map.",
-    "gpx": "/media/mercurys-boot/mercurys-boot.gpx"
+    "gpx": "/media/mercurys-boot/mercurys-boot.gpx",
+    "pdf": "/media/mercurys-boot/ben-bullen-route.pdf",
+    "pdf_blank": "/media/mercurys-boot/ben-bullen-blank.pdf"
   },
   "tips": [
     {

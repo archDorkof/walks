@@ -53,10 +53,13 @@ const REVEAL_JS = `const io = new IntersectionObserver(es => es.forEach(e => { i
 // Without one: the static map image. Either way, download links for the files.
 function mapPanel(m) {
   if (!m || !(m.image || m.gpx)) return '';
+  // Printable PDF maps take the place of the map image download when there is one.
   const downloads = [
     m.gpx ? `<a class="gpx" href="${esc(m.gpx)}" download>Download GPX</a>` : '',
-    m.image ? `<a class="gpx alt" href="${esc(m.image)}" download>Download map</a>` : ''
-  ].join('\n        ');
+    m.pdf ? `<a class="gpx alt" href="${esc(m.pdf)}" download>Printable map (PDF)</a>` : '',
+    m.pdf_blank ? `<a class="gpx alt" href="${esc(m.pdf_blank)}" download>Map without route (PDF)</a>` : '',
+    !m.pdf && !m.pdf_blank && m.image ? `<a class="gpx alt" href="${esc(m.image)}" download>Download map</a>` : ''
+  ].filter(Boolean).join('\n        ');
   if (m.gpx) return `<aside class="map-panel reveal">
       <div class="topo-wrap">
         <div class="topo" data-gpx="${esc(m.gpx)}" role="region" aria-label="${esc(m.alt || 'Interactive topographic map of the route')}"></div>
