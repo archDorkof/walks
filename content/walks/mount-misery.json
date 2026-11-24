@@ -6,12 +6,12 @@
   "area": "Western edge of Mudgee",
   "lede": "A quick up-and-back climb on fire trail from the edge of town to Mount Misery, short enough to walk or run before or after work.",
   "description": "An 8.8 km return climb on fire trail from Rifle Range Road at Glen Ayr, on the western edge of Mudgee, to the communication tower on Mount Misery. Short enough to walk or run before or after work.",
-  "hero_image": "/media/mount-misery/view-from-mount-misery.jpg",
-  "hero_alt": "Four walkers standing in tall grass on Mount Misery, looking out over Mudgee and the farmland beyond in late afternoon light",
+  "hero_image": "/media/mount-misery/dawn-over-mudgee.jpg",
+  "hero_alt": "The lights of Mudgee at dawn under a low bank of fog, with a range of hills silhouetted against an orange and pink sky",
   "card": {
     "area_tag": "Mudgee",
-    "image": "/media/mount-misery/view-from-the-misery-climb.jpg",
-    "image_alt": "A walker in a red shirt looking through the trees to sunlit hills across the valley",
+    "image": "/media/mount-misery/running-down-to-mudgee.jpg",
+    "image_alt": "A group of runners and their dogs heading down a dirt fire trail past a communication tower, with Mudgee spread out below at sunrise",
     "blurb": "A quick climb on fire trail from the edge of town to Mount Misery and back. Walk it or run it, before or after work.",
     "tags": [
       "Return",
@@ -34,7 +34,7 @@
     },
     {
       "label": "Grade",
-      "value": "[X]"
+      "value": "Grade 1 · Easy"
     },
     {
       "label": "Walk type",
@@ -61,7 +61,7 @@
     ],
     "note": "The way up crosses private property, so stay on the fire trail and leave the gate as you found it."
   },
-  "walk_intro": "The route follows the fire trail south from Rifle Range Road, climbs past the Translator and the communication towers, then follows the Mount Misery Trail west to the communication tower on Mount Misery. It's about 4.4 km each way, and you come back the same way. For a longer day, the [Misery Traverse](/misery-traverse/) carries on from the top along the ridge to Hill End Road.",
+  "walk_intro": "The route follows the fire trail south from Rifle Range Road, climbs past the Translator and the communication towers, then follows the Mount Misery Trail west to the communication tower on Mount Misery. It's about 4.4 km each way on fire trail, with a few steep sections, and you come back the same way. For a longer day, the [Misery Traverse](/misery-traverse/) carries on from the top along the ridge to Hill End Road.",
   "stops": [
     {
       "kicker": "Start",
@@ -102,6 +102,9 @@
       "heading": "Back to Rifle Range Road",
       "text": "Head back down the same fire trail to Rifle Range Road. It's downhill most of the way, so it makes a good run.\n\nIf you'd rather keep going, the [Misery Traverse](/misery-traverse/) follows the ridge north from Mount Misery to Hill End Road.",
       "highlight": false,
+      "image": "/media/mount-misery/running-down-to-mudgee.jpg",
+      "image_alt": "A group of runners and their dogs heading down a dirt fire trail past a communication tower, with Mudgee spread out below at sunrise",
+      "caption": "Running back down towards Mudgee",
       "image_tall": false
     }
   ],
