@@ -241,9 +241,11 @@
   /* Interactive route map (shown when a walk has a GPX file) */
   .topo-wrap{background:#fffaf2;border-radius:var(--radius);padding:10px;box-shadow:var(--shadow)}
   .topo{height:480px;border-radius:12px;z-index:0}
-  .route-toggle{display:flex;align-items:center;gap:.5rem;padding:.7rem .4rem .1rem;font-size:.9rem;font-weight:600;color:var(--ink);cursor:pointer}
-  .route-toggle input{accent-color:var(--ochre);width:18px;height:18px}
-  .map-caption{font-size:.82rem;color:var(--ink-soft);padding:.4rem .4rem .2rem;margin:0}
+  button.gpx{border:0;cursor:pointer;font-family:inherit}
+  .route-btn[aria-pressed="false"]{background:var(--rust)}
+  .leaflet-tooltip.map-label{background:#fffaf2;border:0;box-shadow:0 2px 6px rgba(60,30,10,.3);color:var(--rust);font:600 .78rem Inter,sans-serif;padding:2px 7px}
+  .leaflet-tooltip.map-label::before{display:none}
+  .map-caption{font-size:.82rem;color:var(--ink-soft);padding:.7rem .4rem .2rem;margin:0}
   .downloads{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}
   .downloads .gpx{margin-top:0}
   .gpx.alt{background:transparent;color:var(--ochre-deep);border:1.5px solid var(--ochre)}
