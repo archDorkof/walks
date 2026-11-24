@@ -193,7 +193,8 @@ Use the `.reveal` fade-up on scroll and the slow hero zoom. Both turn off under 
 - Every walk has a route map, saved as `images/route-map.jpg`.
 - Draw the route in orange (to match `--ochre`) on a NSW topographic base map.
 - The caption must name the map sheet and say the route is approximate: *Approximate route in orange. Base map: Ben Bullen 8931-4S topographic map.*
-- Optionally add a GPX download link under the map.
+- **Add a GPX file of the route whenever you have one** (Route map → GPX file in Pages CMS). The page then shows an interactive NSW topographic map with a **Show suggested route** toggle, plus Download GPX and Download map buttons. Without a GPX, the page shows the static map image.
+- When the site builds, it prints each GPX route's length and total ascent (`GPX route: 4.2 km, 310 m total ascent`). Use these for the Distance and Climb quick facts.
 
 ---
 
