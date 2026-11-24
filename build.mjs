@@ -65,6 +65,7 @@ function mapPanel(m) {
       </div>
       <div class="downloads">
         <button type="button" class="gpx route-btn" aria-pressed="true">Hide route</button>
+        ${m.image ? `<button type="button" class="gpx alt" data-full="${esc(m.image)}" data-alt="${esc(m.alt)}">View larger map</button>` : ''}
         ${pdfBtn}
         <a class="gpx alt" href="${esc(m.gpx)}" download>Download GPX</a>
       </div>
@@ -249,10 +250,10 @@ ${w.band && w.band.image ? `<div class="band reveal">
   ${REVEAL_JS}
   const lb = document.getElementById('lightbox');
   const lbImg = lb.querySelector('img');
-  document.querySelectorAll('figure[data-full]').forEach(fig => {
+  document.querySelectorAll('[data-full]').forEach(fig => {
     fig.addEventListener('click', () => {
       lbImg.src = fig.dataset.full;
-      lbImg.alt = fig.querySelector('img').alt;
+      lbImg.alt = fig.dataset.alt || fig.querySelector('img')?.alt || '';
       lb.classList.add('open');
     });
   });
