@@ -4,19 +4,19 @@
   "published": true,
   "order": 1,
   "area": "Gardens of Stone National Park",
-  "lede": "A short walk with a bit of bushbashing to a boot-shaped rock on the Capertee cliffline, which you can climb from the toe.",
-  "description": "A short walk with some bushbashing to Mercurys Boot, a boot-shaped sandstone rock on the Capertee cliffline near Baal Bone Gap in Gardens of Stone National Park.",
+  "lede": "A short but steep walk through thick scrub to a boot-shaped rock on the Capertee cliffline, which you can climb from the toe.",
+  "description": "A short, steep, partly off-track walk through scrub to Mercurys Boot, a boot-shaped sandstone rock on the Capertee cliffline near Baal Bone Gap in Gardens of Stone National Park.",
   "hero_image": "/media/mercurys-boot/mercurys-boot.jpg",
   "hero_alt": "A bushwalker standing on top of Mercurys Boot, a boot-shaped sandstone rock on the Capertee cliffline",
   "card": {
     "area_tag": "Gardens of Stone NP",
     "image": "/media/mercurys-boot/mercurys-boot.jpg",
     "image_alt": "A walker on top of Mercurys Boot",
-    "blurb": "A short walk with a bit of bushbashing to a boot-shaped rock on the Capertee cliffline. Climb it from the toe.",
+    "blurb": "A short but steep walk through thick scrub to a boot-shaped rock on the Capertee cliffline. Climb it from the toe.",
     "tags": [
       "Short",
       "Partly off-track",
-      "Return"
+      "Scrub & scrambling"
     ]
   },
   "facts": [
@@ -26,19 +26,11 @@
     },
     {
       "label": "Distance",
-      "value": "[X] km return"
-    },
-    {
-      "label": "Time",
-      "value": "[X] hrs"
-    },
-    {
-      "label": "Climb",
-      "value": "[X] m total ascent"
+      "value": "About 2 km from the Moffitts Trail ridge; under 500 m from Baal Bone Gap"
     },
     {
       "label": "Grade",
-      "value": "Grade [X]"
+      "value": "Grade 3 · Hard"
     },
     {
       "label": "Walk type",
@@ -57,36 +49,36 @@
       "value": "33.23530° S, 150.09201° E (GR 290 188)"
     }
   ],
-  "intro": "High above the Capertee Valley, a great sandstone block leans out over the drop. From the right angle it looks just like a boot. It's a short walk with a bit of bushbashing, and you can climb right up onto the Boot from the toe.",
+  "intro": "High above the Capertee Valley, a great sandstone block leans out over the drop. From the right angle it looks just like a boot. It's a short walk, but a steep one, with lots of scrub and some rock scrambling, and you can climb right up onto the Boot from the toe.",
   "getting_there": {
-    "intro": "There are two ways in: along the ridge from Moffitts Trail, or up from Baal Bone Gap. Both are short, and both finish with a bit of bushbashing to the cliffline.",
+    "intro": "There are two ways in: along the ridge from Moffitts Trail (about 2 km), or up from Baal Bone Gap (under 500 m, but very steep). Both involve scrub and some rock scrambling.",
     "options": [
       {
         "tag": "From the south",
         "heading": "Moffitts Trail ridge",
-        "text": "Head for Moffitts Trail (also signposted as Ben Bullen Trail) and leave it on the ridge at Ben Bullen GR [X]. Conventional vehicles should stop wherever the track starts to look too rough for them.\n\nFrom the ridge, bushbash out to the cliffline and follow it to the Boot."
+        "text": "Head for Moffitts Trail (also signposted as Ben Bullen Trail) and leave it on the ridge at Ben Bullen GR 284 189. Conventional vehicles should stop wherever the track starts to look too rough for them.\n\nFrom the ridge it's about 2 km to the Boot. Bushbash out to the cliffline and follow it to the Boot."
       },
       {
         "tag": "From the east",
         "heading": "Baal Bone Gap",
-        "text": "Baal Bone Gap is a natural break in the cliffs just below the Boot. From the Gap, climb up to the cliffline and follow it west to the Boot."
+        "text": "Baal Bone Gap is a natural break in the cliffs just below the Boot. It's under 500 m from the Gap to the Boot, but it's very steep, with lots of scrub and some rock scrambling up through the cliffs."
       }
     ],
     "note": "Fire trail conditions change quickly after rain. Check the current NPWS alerts for Gardens of Stone National Park before you go."
   },
-  "walk_intro": "There's no formed track to the Boot. Expect some scrub and rock platforms, with the cliffline as your guide.",
+  "walk_intro": "There's no formed track to the Boot. Expect steep ground, thick scrub, high cliffs and some rock scrambling, with the cliffline as your guide.",
   "stops": [
     {
       "kicker": "Start",
       "heading": "Moffitts Trail or Baal Bone Gap",
-      "text": "Start from the ridge off Moffitts Trail, or from Baal Bone Gap. Either way, head for the cliff edge above the Capertee Valley.",
+      "text": "Start from the ridge off Moffitts Trail (Ben Bullen GR 284 189), or from Baal Bone Gap. Either way, head for the cliff edge above the Capertee Valley.",
       "highlight": false,
       "image_tall": false
     },
     {
       "kicker": "Off-track",
       "heading": "Bushbash to the cliffline",
-      "text": "The last stretch is a bit of a bushbash through the scrub. Once you reach the cliffline, follow it and the views open up over the Capertee Valley.",
+      "text": "Whichever way you come, expect lots of scrub. From Baal Bone Gap it's very steep, with some rock scrambling through the cliffs. Once you reach the cliffline, follow it and the views open up over the Capertee Valley.",
       "highlight": false,
       "image_tall": false
     },
@@ -122,7 +114,7 @@
     {
       "icon": "warning",
       "heading": "Cliff edges",
-      "text": "The cliffs are high and sheer, and the edges can be undercut. Take care climbing the Boot, and keep well back from the edge, especially with children or in wind."
+      "text": "The cliffs are high and sheer, and the edges can be undercut. There's some rock scrambling on the way, so take care climbing the Boot and keep well back from the edge, especially with children or in wind."
     },
     {
       "icon": "water",
