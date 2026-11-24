@@ -1,22 +1,22 @@
 {
-  "title": "Mercurys Boot & Stargate Tunnel",
+  "title": "Mercurys Boot & Baal Bone Gap",
   "slug": "mercurys-boot",
   "published": true,
   "order": 1,
   "area": "Gardens of Stone National Park",
-  "lede": "An off-track loop along the Capertee cliffline: a boot-shaped rock high above the valley, an old Aboriginal route through the cliffs, and a hidden sandstone tunnel.",
-  "description": "An off-track loop along the Capertee cliffline in Gardens of Stone National Park, taking in Mercurys Boot, Baal Bone Gap, McLeans Pass and the Stargate Tunnel.",
+  "lede": "A short walk with a bit of bushbashing to a boot-shaped rock on the Capertee cliffline, which you can climb from the toe.",
+  "description": "A short walk with some bushbashing to Mercurys Boot, a boot-shaped sandstone rock on the Capertee cliffline near Baal Bone Gap in Gardens of Stone National Park.",
   "hero_image": "/media/mercurys-boot/mercurys-boot.jpg",
   "hero_alt": "A bushwalker standing on top of Mercurys Boot, a boot-shaped sandstone rock on the Capertee cliffline",
   "card": {
     "area_tag": "Gardens of Stone NP",
     "image": "/media/mercurys-boot/mercurys-boot.jpg",
     "image_alt": "A walker on top of Mercurys Boot",
-    "blurb": "An off-track loop along the Capertee cliffline: a boot-shaped rock above the valley, Baal Bone Gap, McLeans Pass and a hidden sandstone tunnel.",
+    "blurb": "A short walk with a bit of bushbashing to a boot-shaped rock on the Capertee cliffline. Climb it from the toe.",
     "tags": [
-      "Off-track",
-      "Loop",
-      "Navigation needed"
+      "Short",
+      "Partly off-track",
+      "Return"
     ]
   },
   "facts": [
@@ -25,52 +25,75 @@
       "value": "Capertee Valley rim, near Ben Bullen"
     },
     {
+      "label": "Distance",
+      "value": "[X] km return"
+    },
+    {
+      "label": "Time",
+      "value": "[X] hrs"
+    },
+    {
+      "label": "Climb",
+      "value": "[X] m total ascent"
+    },
+    {
+      "label": "Grade",
+      "value": "Grade [X]"
+    },
+    {
       "label": "Walk type",
-      "value": "Off-track loop"
+      "value": "Partly off-track; Return"
     },
     {
       "label": "Highlights",
-      "value": "Mercurys Boot, Baal Bone Gap, Stargate Tunnel"
+      "value": "Mercurys Boot, Capertee Valley views"
     },
     {
       "label": "Map",
       "value": "Ben Bullen 8931-4S 1:25,000"
     },
     {
-      "label": "Navigation",
-      "value": "Map & compass / GPS essential"
+      "label": "Location",
+      "value": "33.23530° S, 150.09201° E (GR 290 188)"
     }
   ],
-  "intro": "High above the Capertee Valley, a great sandstone block leans out over the drop. From the right angle it looks just like a boot. This loop takes you along the escarpment to Mercurys Boot, down through Baal Bone Gap and on to McLeans Pass, where a triangular tunnel cuts straight through the rock.",
+  "intro": "High above the Capertee Valley, a great sandstone block leans out over the drop. From the right angle it looks just like a boot. It's a short walk with a bit of bushbashing, and you can climb right up onto the Boot from the toe.",
   "getting_there": {
-    "intro": "The aim is to park as close to Baal Bone Gap as you can. How close you get depends on your vehicle and how much risk you're happy to take on the fire trails.",
+    "intro": "There are two ways in: along the ridge from Moffitts Trail, or up from Baal Bone Gap. Both are short, and both finish with a bit of bushbashing to the cliffline.",
     "options": [
       {
-        "tag": "From Mudgee",
-        "heading": "Moffitts Trail",
-        "text": "Head for Moffitts Trail (also signposted as Ben Bullen Trail). Conventional vehicles should stop wherever the track starts to look too rough for them.\n\nFour-wheel drives can usually get to a sharp corner and steep descent about 1 km before the junction with the Bicentennial National Trail. Don't drive down unless you're confident you can drive back up."
+        "tag": "From the south",
+        "heading": "Moffitts Trail ridge",
+        "text": "Head for Moffitts Trail (also signposted as Ben Bullen Trail) and leave it on the ridge at Ben Bullen GR [X]. Conventional vehicles should stop wherever the track starts to look too rough for them.\n\nFrom the ridge, bushbash out to the cliffline and follow it to the Boot."
       },
       {
-        "tag": "From the south",
-        "heading": "Unnamed junction",
-        "text": "There's a good place to park at an unnamed junction a couple of kilometres south of Baal Bone Creek."
+        "tag": "From the east",
+        "heading": "Baal Bone Gap",
+        "text": "Baal Bone Gap is a natural break in the cliffs just below the Boot. From the Gap, climb up to the cliffline and follow it west to the Boot."
       }
     ],
     "note": "Fire trail conditions change quickly after rain. Check the current NPWS alerts for Gardens of Stone National Park before you go."
   },
-  "walk_intro": "The route has no formed track. Expect scrub, rock platforms and some route-finding, with the cliffline as your guide.",
+  "walk_intro": "There's no formed track to the Boot. Expect some scrub and rock platforms, with the cliffline as your guide.",
   "stops": [
     {
       "kicker": "Start",
-      "heading": "To the Capertee cliffline",
-      "text": "Leave Moffitts Trail and head cross-country to the Capertee cliffline. When you reach the cliff edge, follow it down towards the valley. The escarpment guides you most of the way, and the views open up over the Capertee Valley as you go.",
+      "heading": "Moffitts Trail or Baal Bone Gap",
+      "text": "Start from the ridge off Moffitts Trail, or from Baal Bone Gap. Either way, head for the cliff edge above the Capertee Valley.",
+      "highlight": false,
+      "image_tall": false
+    },
+    {
+      "kicker": "Off-track",
+      "heading": "Bushbash to the cliffline",
+      "text": "The last stretch is a bit of a bushbash through the scrub. Once you reach the cliffline, follow it and the views open up over the Capertee Valley.",
       "highlight": false,
       "image_tall": false
     },
     {
       "kicker": "Highlight",
       "heading": "Mercurys Boot",
-      "text": "Keep going along the cliffline until you reach Mercurys Boot. You'll know it when you see it: a big rock jutting out over the valley, shaped unmistakably like a boot. It's a great place for a break and photos.",
+      "text": "You'll know the Boot when you see it: a big rock jutting out over the valley, shaped unmistakably like a boot.\n\nYou can climb onto it from the toe. Take care on top, because it's a long way down on the valley side. And make sure you get a kicking picture before you leave.",
       "highlight": true,
       "image": "/media/mercurys-boot/mercurys-boot.jpg",
       "image_alt": "A walker standing on top of Mercurys Boot against a clear blue sky",
@@ -78,79 +101,37 @@
       "image_tall": false
     },
     {
-      "kicker": "Through the cliffs",
-      "heading": "Baal Bone Gap",
-      "text": "Just below the Boot is Baal Bone Gap, a natural break in the cliffs and an easy way down into the valley. You may find water in one of the pipes at the Gap, but the tap may now be locked, so don't rely on it.",
-      "highlight": false,
-      "image_tall": false
-    },
-    {
-      "kicker": "About 1 km east",
-      "heading": "McLeans Pass",
-      "text": "From Baal Bone Gap, head east, roughly following the cliffline for a kilometre or so, until you reach McLeans Pass. There's a bit of a drop to get into the pass.",
-      "highlight": false,
-      "image_tall": false
-    },
-    {
-      "kicker": "Highlight",
-      "heading": "Stargate Tunnel",
-      "text": "Once you're at the bottom of the pass, head a little south to the Stargate Tunnel. This triangular sandstone tunnel is one of the highlights of the walk.",
-      "highlight": true,
-      "pills": [
-        {
-          "label": "Length",
-          "value": "~20 m"
-        },
-        {
-          "label": "Width",
-          "value": "~7 m"
-        },
-        {
-          "label": "Shape",
-          "value": "Triangular"
-        }
-      ],
-      "image": "/media/mercurys-boot/stargate-tunnel.jpg",
-      "image_alt": "Looking through the triangular Stargate Tunnel towards ferns and forest beyond",
-      "caption": "Looking through the Stargate Tunnel",
-      "image_tall": true
-    },
-    {
       "kicker": "Finish",
-      "heading": "Back along the ridge",
-      "text": "From the Stargate Tunnel, climb back up to the ridgeline and follow it south until you reach the unnamed road. From there, the fire trails lead back to the Bicentennial National Trail and your car.",
+      "heading": "Back the way you came",
+      "text": "Retrace your steps along the cliffline and back through the scrub to your car.",
       "highlight": false,
       "image_tall": false
     }
   ],
   "map": {
     "image": "/media/mercurys-boot/route-map.jpg",
-    "alt": "Topographic map showing the loop route from Moffitts Trail past Baal Bone Gap to McLeans Pass and back via the ridge and fire trails",
-    "caption": "Approximate route in orange. Base map: Ben Bullen 8931-4S topographic map. Tap to enlarge."
-  },
-  "band": {
-    "image": "/media/mercurys-boot/stargate-tunnel.jpg",
-    "quote": "A doorway in the sandstone, with the forest glowing on the other side."
+    "alt": "Topographic map showing the routes to Mercurys Boot from Moffitts Trail and from Baal Bone Gap",
+    "caption": "Approximate routes in orange. Base map: Ben Bullen 8931-4S topographic map. Tap to enlarge."
   },
   "tips": [
     {
       "icon": "compass",
       "heading": "Off-track navigation",
-      "text": "This walk isn't signposted or marked. Carry a map and compass or GPS, and know how to use them."
+      "text": "There's no track or signs to the Boot. Carry a map and compass or GPS, and know how to use them."
     },
     {
       "icon": "warning",
       "heading": "Cliff edges",
-      "text": "The cliffs are high and sheer, and the edges can be undercut. Keep well back, especially with children or in wind."
+      "text": "The cliffs are high and sheer, and the edges can be undercut. Take care climbing the Boot, and keep well back from the edge, especially with children or in wind."
     },
     {
       "icon": "water",
       "heading": "Water",
-      "text": "Don't count on finding any. The tap at Baal Bone Gap may be locked, so carry all you'll need, particularly in summer."
+      "text": "Don't count on finding any. There may be water in a pipe at Baal Bone Gap, but the tap may be locked, so carry all you'll need."
     },
     {
       "icon": "hand",
-      "heading": "Respect the country",
+      "heading": "Respect the Country",
       "text": "Baal Bone Gap has Aboriginal cultural sites, including hand stencils. Look, but don't touch. Leave no trace."
     },
     {
