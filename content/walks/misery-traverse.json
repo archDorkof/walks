@@ -37,10 +37,6 @@
       "value": "About 600 m total ascent"
     },
     {
-      "label": "Grade",
-      "value": "Grade [X] · [X]"
-    },
-    {
       "label": "Walk type",
       "value": "Fire trail and off-track; One way (car shuffle)"
     },
@@ -60,12 +56,12 @@
       {
         "tag": "Start",
         "heading": "Rifle Range Road, Glen Ayr",
-        "text": "The walk starts on Rifle Range Road at Glen Ayr, on the western edge of Mudgee, just west of Faucett Drive. [X: where to park]"
+        "text": "The walk starts on Rifle Range Road at Glen Ayr, on the western edge of Mudgee, just west of Faucett Drive."
       },
       {
         "tag": "Finish",
         "heading": "Hill End Road, Caerleon",
-        "text": "The walk finishes on Hill End Road near the Blain Road turn-off at Caerleon, north-west of town. Leave a car here before you start. [X: where to park]"
+        "text": "The walk finishes on Hill End Road near the Blain Road turn-off at Caerleon, north-west of town. Leave a car here before you start."
       }
     ],
     "note": "The way up crosses private property, so stay on the fire trail. Near the end, head through the tip to keep off private land."
