@@ -7,6 +7,9 @@ import path from 'node:path';
 
 const ROOT = path.dirname(new URL(import.meta.url).pathname);
 const OUT = path.join(ROOT, 'dist');
+// The live address, used for canonical links, social previews, sitemap.xml and robots.txt.
+const SITE_URL = 'https://walks.mawt.info';
+const abs = (p = '') => /^https?:\/\//.test(p) ? p : SITE_URL + (p.startsWith('/') ? p : '/' + p);
 
 // ---------- helpers ----------
 const esc = (s = '') =>
@@ -154,11 +157,14 @@ function walkPage(w) {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${esc(w.title)} | Bushwalks</title>
+<title>${esc(w.title)} | Bushwalks around Mudgee</title>
 <meta name="description" content="${esc(w.description)}">
+<link rel="canonical" href="${SITE_URL}/${esc(w.slug)}">
+<meta property="og:type" content="article">
+<meta property="og:url" content="${SITE_URL}/${esc(w.slug)}">
 <meta property="og:title" content="${esc(w.title)}">
 <meta property="og:description" content="${esc(w.description)}">
-${w.hero_image ? `<meta property="og:image" content="${esc(w.hero_image)}">` : ''}
+${w.hero_image ? `<meta property="og:image" content="${esc(abs(w.hero_image))}">` : ''}
 ${FONTS}
 ${w.map && w.map.gpx ? LEAFLET_CSS : ''}
 <link rel="stylesheet" href="/assets/walk.css">
@@ -293,8 +299,14 @@ function homePage(site, walks) {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${esc(site.site_name)} | mawt.info</title>
+<title>${esc(site.site_name)} around Mudgee, NSW | mawt.info</title>
 <meta name="description" content="${esc(site.meta_description)}">
+<link rel="canonical" href="${SITE_URL}/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="${SITE_URL}/">
+<meta property="og:title" content="${esc(site.site_name)} around Mudgee, NSW">
+<meta property="og:description" content="${esc(site.meta_description)}">
+${site.hero_image ? `<meta property="og:image" content="${esc(abs(site.hero_image))}">` : ''}
 ${FONTS}
 <link rel="stylesheet" href="/assets/home.css">
 </head>
@@ -382,6 +394,21 @@ for (const w of walks) {
 }
 fs.writeFileSync(path.join(OUT, 'index.html'), homePage(site, walks));
 console.log('  built / (home)');
+
+// sitemap.xml lists the home page and every published walk, so new walks are picked up
+// by search engines automatically. robots.txt points to it.
+const urls = [`${SITE_URL}/`, ...walks.map(w => `${SITE_URL}/${w.slug}`)];
+fs.writeFileSync(path.join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urls.map(u => `  <url><loc>${esc(u)}</loc></url>`).join('\n')}
+</urlset>
+`);
+fs.writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *
+Allow: /
+
+Sitemap: ${SITE_URL}/sitemap.xml
+`);
+console.log(`  built /sitemap.xml (${urls.length} pages) and /robots.txt`);
 
 for (const d of ['assets', 'media']) {
   if (fs.existsSync(path.join(ROOT, d))) fs.cpSync(path.join(ROOT, d), path.join(OUT, d), { recursive: true });
