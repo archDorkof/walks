@@ -26,7 +26,7 @@
     },
     {
       "label": "Distance",
-      "value": "About 2 km one way from the Moffitts Trail ridge; under 500 m from Baal Bone Gap"
+      "value": "About 1.6 km one way from the Moffitts Trail ridge; under 500 m from Baal Bone Gap"
     },
     {
       "label": "Grade",
@@ -51,12 +51,12 @@
   ],
   "intro": "High above the Capertee Valley, a great sandstone block leans out over the drop. From the right angle it looks just like a boot. It's a short walk, but a steep one, with lots of scrub and some rock scrambling, and you can climb right up onto the Boot from the toe.",
   "getting_there": {
-    "intro": "There are two ways in: along the ridge from Moffitts Trail (about 2 km), or up from Baal Bone Gap (under 500 m, but very steep). Both involve scrub and some rock scrambling.",
+    "intro": "There are two ways in: along the ridge from Moffitts Trail (about 1.6 km), or up from Baal Bone Gap (under 500 m, but very steep). Both involve scrub and some rock scrambling.",
     "options": [
       {
         "tag": "From the south",
         "heading": "Moffitts Trail ridge",
-        "text": "Head for Moffitts Trail (also signposted as Ben Bullen Trail) and leave it on the ridge at Ben Bullen GR 284 189. Conventional vehicles should stop wherever the track starts to look too rough for them.\n\nFrom the ridge it's about 2 km to the Boot. Bushbash out to the cliffline and follow it to the Boot."
+        "text": "Head for Moffitts Trail (also signposted as Ben Bullen Trail) and leave it on the ridge at Ben Bullen GR 284 189. Conventional vehicles should stop wherever the track starts to look too rough for them.\n\nFrom the ridge it's about 1.6 km to the Boot. Bushbash out to the cliffline and follow it to the Boot."
       },
       {
         "tag": "From the east",
@@ -103,7 +103,8 @@
   "map": {
     "image": "/media/mercurys-boot/route-map.jpg",
     "alt": "Topographic map showing the routes to Mercurys Boot from Moffitts Trail and from Baal Bone Gap",
-    "caption": "Approximate routes in orange. Base map: Ben Bullen 8931-4S topographic map. Tap to enlarge."
+    "caption": "Approximate route in orange. Base map: Ben Bullen 8931-4S topographic map.",
+    "gpx": "/media/mercurys-boot/mercurys-boot.gpx"
   },
   "tips": [
     {
