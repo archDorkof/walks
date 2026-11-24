@@ -1,0 +1,147 @@
+{
+  "title": "Mount Misery via Rifle Range Road",
+  "slug": "mount-misery",
+  "published": true,
+  "order": 3,
+  "area": "Western edge of Mudgee",
+  "lede": "A quick up-and-back climb on fire trail from the edge of town to Mount Misery, short enough to walk or run before or after work.",
+  "description": "An 8.8 km return climb on fire trail from Rifle Range Road at Glen Ayr, on the western edge of Mudgee, to the communication tower on Mount Misery. Short enough to walk or run before or after work.",
+  "hero_image": "/media/mount-misery/view-from-mount-misery.jpg",
+  "hero_alt": "Four walkers standing in tall grass on Mount Misery, looking out over Mudgee and the farmland beyond in late afternoon light",
+  "card": {
+    "area_tag": "Mudgee",
+    "image": "/media/mount-misery/view-from-the-misery-climb.jpg",
+    "image_alt": "A walker in a red shirt looking through the trees to sunlit hills across the valley",
+    "blurb": "A quick climb on fire trail from the edge of town to Mount Misery and back. Walk it or run it, before or after work.",
+    "tags": [
+      "Return",
+      "Fire trail",
+      "Before or after work"
+    ]
+  },
+  "facts": [
+    {
+      "label": "Region",
+      "value": "Western edge of Mudgee, Glen Ayr"
+    },
+    {
+      "label": "Distance",
+      "value": "About 8.8 km return"
+    },
+    {
+      "label": "Time",
+      "value": "[X]"
+    },
+    {
+      "label": "Grade",
+      "value": "[X]"
+    },
+    {
+      "label": "Walk type",
+      "value": "Fire trail; Return"
+    },
+    {
+      "label": "Highlights",
+      "value": "Mount Misery, views over Mudgee"
+    },
+    {
+      "label": "Map",
+      "value": "Mudgee 8832-4N 1:25,000"
+    }
+  ],
+  "intro": "Mount Misery is the high ground right on Mudgee's western doorstep, and this is the quickest way up it. It's fire trail all the way from the edge of town, up and back the same way, so you can walk it or run it. It's short enough to fit in before or after work.",
+  "getting_there": {
+    "intro": "The walk starts on Rifle Range Road at Glen Ayr, on the western edge of Mudgee, just west of Faucett Drive.",
+    "options": [
+      {
+        "tag": "From Mudgee",
+        "heading": "Rifle Range Road, Glen Ayr",
+        "text": "[X] Where to park on Rifle Range Road."
+      }
+    ],
+    "note": "The way up crosses private property, so stay on the fire trail."
+  },
+  "walk_intro": "The route follows the fire trail south from Rifle Range Road, climbs past the Translator and the communication towers, then follows the Mount Misery Trail west to the communication tower on Mount Misery. It's about 4.4 km each way, and you come back the same way. For a longer day, the [Misery Traverse](/misery-traverse/) carries on from the top along the ridge to Hill End Road.",
+  "stops": [
+    {
+      "kicker": "Start",
+      "heading": "Rifle Range Road",
+      "text": "Set off from Rifle Range Road at Glen Ayr and head south on the fire trail, away from town and towards the hills. This first part crosses private property, so stay on the fire trail.",
+      "highlight": false,
+      "image_tall": false
+    },
+    {
+      "kicker": "Highlight · about 1.5 km",
+      "heading": "The Translator",
+      "text": "The fire trail climbs steadily to the Translator and the communication towers on the first spur, then swings south along the ridge towards the radio mast. As you gain height, the views open up across the valley.",
+      "highlight": true,
+      "image": "/media/mount-misery/view-from-the-misery-climb.jpg",
+      "image_alt": "A walker in a red shirt looking through the eucalypts to a valley of farmland and hills lit orange by the low sun",
+      "caption": "Looking across the valley on the climb up Mount Misery",
+      "image_tall": false
+    },
+    {
+      "kicker": "About 2.8 km",
+      "heading": "Mount Misery Trail",
+      "text": "At the radio mast, turn west onto the Mount Misery Trail. It follows the edge of Avisford Nature Reserve along the ridge to Mount Misery.",
+      "highlight": false,
+      "image_tall": false
+    },
+    {
+      "kicker": "Highlight · about 4.4 km",
+      "heading": "Mount Misery",
+      "text": "The trail ends at the communication tower on Mount Misery. From the top there are great views of Mudgee spread out below, with farmland running away to the ranges on the horizon.",
+      "highlight": true,
+      "image": "/media/mount-misery/view-from-mount-misery.jpg",
+      "image_alt": "Four walkers standing in tall grass on Mount Misery, looking out over the town of Mudgee and the farmland beyond",
+      "caption": "Mudgee from Mount Misery",
+      "image_tall": false
+    },
+    {
+      "kicker": "Finish · about 8.8 km",
+      "heading": "Back to Rifle Range Road",
+      "text": "Head back down the same fire trail to Rifle Range Road. It's downhill most of the way, so it makes a good run.\n\nIf you'd rather keep going, the [Misery Traverse](/misery-traverse/) follows the ridge north from Mount Misery to Hill End Road.",
+      "highlight": false,
+      "image_tall": false
+    }
+  ],
+  "map": {
+    "image": "/media/mount-misery/route-map.jpg",
+    "alt": "Topographic map showing the route from Rifle Range Road at Glen Ayr, past the Translator and the radio mast, then west along the Mount Misery Trail to the communication tower on Mount Misery",
+    "caption": "Approximate route in orange. Base map: Mudgee 8832-4N topographic map.",
+    "gpx": "/media/mount-misery/mount-misery.gpx",
+    "pdf": "/media/mount-misery/mudgee-route.pdf",
+    "pdf_blank": "/media/mount-misery/mudgee-blank.pdf"
+  },
+  "band": {
+    "image": "",
+    "quote": ""
+  },
+  "tips": [
+    {
+      "icon": "compass",
+      "heading": "Navigation",
+      "text": "It's fire trail all the way, so navigation is straightforward. Carry a map or the GPX on your phone."
+    },
+    {
+      "icon": "gate",
+      "heading": "Private land",
+      "text": "The route crosses private property on the way up, so stay on the fire trail."
+    },
+    {
+      "icon": "water",
+      "heading": "Water",
+      "text": "There's no water on the walk. Carry what you'll need, especially if you're running on a hot afternoon."
+    },
+    {
+      "icon": "hand",
+      "heading": "Respect the Country",
+      "text": "This is Wiradjuri Country. Look, but don't touch. Leave no trace."
+    },
+    {
+      "icon": "phone",
+      "heading": "Tell someone",
+      "text": "Leave your plans with someone. There's good phone coverage along the way."
+    }
+  ]
+}
