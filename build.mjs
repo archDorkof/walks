@@ -49,25 +49,24 @@ const REVEAL_JS = `const io = new IntersectionObserver(es => es.forEach(e => { i
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));`;
 
 // ---------- route map ----------
-// With a GPX file: an interactive NSW topo map with a "Show suggested route" toggle.
+// With a GPX file: an interactive NSW topo map with Hide route, PDF and GPX buttons.
 // Without one: the static map image. Either way, download links for the files.
 function mapPanel(m) {
   if (!m || !(m.image || m.gpx)) return '';
-  // Printable PDF maps take the place of the map image download when there is one.
-  const downloads = [
-    m.gpx ? `<a class="gpx" href="${esc(m.gpx)}" download>Download GPX</a>` : '',
-    m.pdf ? `<a class="gpx alt" href="${esc(m.pdf)}" download>Printable map (PDF)</a>` : '',
-    m.pdf_blank ? `<a class="gpx alt" href="${esc(m.pdf_blank)}" download>Map without route (PDF)</a>` : '',
-    !m.pdf && !m.pdf_blank && m.image ? `<a class="gpx alt" href="${esc(m.image)}" download>Download map</a>` : ''
-  ].filter(Boolean).join('\n        ');
+  // One PDF button. With a route toggle, it follows the toggle: the route PDF while the
+  // route is shown, the blank PDF while it's hidden.
+  const pdf = m.pdf || m.pdf_blank;
+  const pdfBtn = pdf ? `<a class="gpx alt pdf-btn" href="${esc(pdf)}" download
+          data-route="${esc(m.pdf || m.pdf_blank)}" data-blank="${esc(m.pdf_blank || m.pdf)}">Download PDF map</a>` : '';
   if (m.gpx) return `<aside class="map-panel reveal">
       <div class="topo-wrap">
         <div class="topo" data-gpx="${esc(m.gpx)}" role="region" aria-label="${esc(m.alt || 'Interactive topographic map of the route')}"></div>
-        <label class="route-toggle"><input type="checkbox" checked> Show suggested route</label>
         ${m.caption ? `<p class="map-caption">${esc(m.caption)}</p>` : ''}
       </div>
       <div class="downloads">
-        ${downloads}
+        <button type="button" class="gpx route-btn" aria-pressed="true">Hide route</button>
+        ${pdfBtn}
+        <a class="gpx alt" href="${esc(m.gpx)}" download>Download GPX</a>
       </div>
     </aside>`;
   return `<aside class="map-panel reveal">
@@ -76,7 +75,7 @@ function mapPanel(m) {
         ${m.caption ? `<figcaption>${esc(m.caption)}</figcaption>` : ''}
       </figure>
       <div class="downloads">
-        ${downloads}
+        ${pdfBtn || `<a class="gpx alt" href="${esc(m.image)}" download>Download map</a>`}
       </div>
     </aside>`;
 }
@@ -96,12 +95,21 @@ const TOPO_JS = `document.querySelectorAll('.topo[data-gpx]').forEach(async el =
     const pts = el => [...el.querySelectorAll('trkpt, rtept')].map(p => [+p.getAttribute('lat'), +p.getAttribute('lon')]);
     const lines = [...xml.querySelectorAll('trkseg, rte')].map(pts).filter(l => l.length > 1);
     const route = L.featureGroup(lines.map(l => L.polyline(l, { color: '#c4672d', weight: 5, opacity: .9 })));
-    if (lines.length) L.circleMarker(lines[0][0], { radius: 7, color: '#fff', weight: 2, fillColor: '#7a3416', fillOpacity: 1 }).bindTooltip('Start').addTo(route);
+    if (lines.length) L.circleMarker(lines[0][0], { radius: 7, color: '#fff', weight: 2, fillColor: '#7a3416', fillOpacity: 1 }).bindTooltip('Start', { permanent: true, direction: 'left', className: 'map-label' }).addTo(route);
     xml.querySelectorAll('wpt').forEach(w => L.circleMarker([+w.getAttribute('lat'), +w.getAttribute('lon')], { radius: 6, color: '#fff', weight: 2, fillColor: '#c4672d', fillOpacity: 1 })
-      .bindTooltip(w.querySelector('name')?.textContent || '').addTo(route));
+      .bindTooltip(w.querySelector('name')?.textContent || '', { permanent: true, direction: 'right', className: 'map-label' }).addTo(route));
     route.addTo(map);
     if (lines.length) map.fitBounds(route.getBounds(), { padding: [24, 24] });
-    el.parentElement.querySelector('.route-toggle input').addEventListener('change', e => e.target.checked ? route.addTo(map) : route.remove());
+    // "Hide route" removes the route, markers and labels, leaving the plain topo map.
+    const panel = el.closest('.map-panel'), btn = panel.querySelector('.route-btn'), pdf = panel.querySelector('.pdf-btn');
+    btn.addEventListener('click', () => {
+      const show = btn.getAttribute('aria-pressed') !== 'true';
+      show ? route.addTo(map) : route.remove();
+      btn.setAttribute('aria-pressed', show);
+      btn.textContent = show ? 'Hide route' : 'Show route';
+      if (pdf) pdf.href = show ? pdf.dataset.route : pdf.dataset.blank;
+      const cap = panel.querySelector('.map-caption'); if (cap) cap.hidden = !show;
+    });
   });`;
 
 // Distance and climb from a GPX file, printed when the site builds (to fill in the quick facts).
