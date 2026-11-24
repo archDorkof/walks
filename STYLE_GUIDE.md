@@ -194,6 +194,7 @@ Use the `.reveal` fade-up on scroll and the slow hero zoom. Both turn off under 
 - Draw the route in orange (to match `--ochre`) on a NSW topographic base map.
 - The caption must name the map sheet and say the route is approximate: *Approximate route in orange. Base map: Ben Bullen 8931-4S topographic map.*
 - **Add a GPX file of the route whenever you have one** (Route map → GPX file in Pages CMS). The page then shows an interactive NSW topographic map with a **Show suggested route** toggle, plus Download GPX and Download map buttons. Without a GPX, the page shows the static map image.
+- Optionally add printable A4 maps as PDFs (Route map → Printable map with route / without route). They replace the plain Download map button. Name them `<sheet>-route.pdf` and `<sheet>-blank.pdf`, e.g. `ben-bullen-route.pdf`.
 - When the site builds, it prints each GPX route's length and total ascent (`GPX route: 4.2 km, 310 m total ascent`). Use these for the Distance and Climb quick facts.
 
 ---
