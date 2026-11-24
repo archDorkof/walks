@@ -6,12 +6,12 @@
   "area": "Western edge of Mudgee",
   "lede": "A one-way traverse from the western edge of Mudgee, up over Mount Misery and along the ridge to Hill End Road, with big views over town.",
   "description": "An 11.9 km one-way traverse from Rifle Range Road on the western edge of Mudgee, over Mount Misery and north along the ridge above Avisford Nature Reserve to Hill End Road near Caerleon.",
-  "hero_image": "/media/misery-traverse/route-map.jpg",
-  "hero_alt": "Topographic map showing the Misery Traverse route from Glen Ayr over Mount Misery and north along the ridge to Hill End Road",
+  "hero_image": "/media/misery-traverse/view-from-mount-misery.jpg",
+  "hero_alt": "Four walkers standing in tall grass on Mount Misery, looking out over Mudgee and the farmland beyond in late afternoon light",
   "card": {
     "area_tag": "Mudgee",
-    "image": "/media/misery-traverse/route-map.jpg",
-    "image_alt": "Topographic map of the Misery Traverse route on the western edge of Mudgee",
+    "image": "/media/misery-traverse/view-from-the-misery-climb.jpg",
+    "image_alt": "A walker in a red shirt looking through the trees to sunlit hills across the valley",
     "blurb": "A half-day traverse from the edge of town, up over Mount Misery and along the ridge to Hill End Road. Great views of Mudgee.",
     "tags": [
       "One way",
@@ -42,7 +42,7 @@
     },
     {
       "label": "Walk type",
-      "value": "Fire trail, then partly off-track; One way (car shuffle)"
+      "value": "Fire trail and off-track; One way (car shuffle)"
     },
     {
       "label": "Highlights",
@@ -70,7 +70,7 @@
     ],
     "note": "The way up crosses private property, so stay on the fire trail. Near the end, head through the tip to keep off private land."
   },
-  "walk_intro": "The route heads south from the edge of town on the fire trail to pick up the Mount Misery Trail, climbs over Mount Misery, then follows the ridge north for most of the way to Hill End Road. It's about 600 m of climbing in all. Navigation gets a bit tricky towards the end.",
+  "walk_intro": "The route heads south from the edge of town on the fire trail to pick up the Mount Misery Trail, climbs over Mount Misery, then follows the ridge north for most of the way to Hill End Road. The ridge is off-track, but mostly easy bushbashing. It's about 600 m of climbing in all, and navigation gets a bit tricky towards the end.",
   "stops": [
     {
       "kicker": "Start",
@@ -82,22 +82,31 @@
     {
       "kicker": "About 4 km",
       "heading": "Mount Misery Trail",
-      "text": "Join the Mount Misery Trail and follow it west past the communication tower, where the climb onto Mount Misery begins.",
+      "text": "Join the Mount Misery Trail and follow it west past the communication tower, where the climb onto Mount Misery begins. As you gain height, the views open up across the valley to the hills on the far side.",
       "highlight": false,
+      "image": "/media/misery-traverse/view-from-the-misery-climb.jpg",
+      "image_alt": "A walker in a red shirt looking through the eucalypts to a valley of farmland and hills lit orange by the low sun",
+      "caption": "Looking across the valley on the climb up Mount Misery",
       "image_tall": false
     },
     {
       "kicker": "Highlight · about 6 km",
       "heading": "Mount Misery",
-      "text": "From up high there are great views of Mudgee spread out below. [X: anything else about the top]",
+      "text": "From the top there are great views of Mudgee spread out below, with farmland running away to the ranges on the horizon.",
       "highlight": true,
+      "image": "/media/misery-traverse/view-from-mount-misery.jpg",
+      "image_alt": "Four walkers standing in tall grass on Mount Misery, looking out over the town of Mudgee and the farmland beyond",
+      "caption": "Mudgee from Mount Misery",
       "image_tall": false
     },
     {
       "kicker": "Highlight",
       "heading": "The ridge north",
-      "text": "From Mount Misery, the route follows the long ridge north, keeping west of Avisford Nature Reserve, for about 6 km. [X: views, scrub, rock]",
+      "text": "From Mount Misery, the route follows the long ridge north, keeping west of Avisford Nature Reserve, for about 6 km. There's no track, but it's mostly easy bushbashing through open forest and tussock grass.",
       "highlight": true,
+      "image": "/media/misery-traverse/bushbashing-on-the-ridge.jpg",
+      "image_alt": "A walker in a bucket hat holding a map on an open, grassy ridge, with forested gullies and distant hills behind",
+      "caption": "Easy bushbashing on the ridge",
       "image_tall": false
     },
     {
@@ -105,6 +114,9 @@
       "heading": "Hill End Road, Caerleon",
       "text": "Towards the end, navigation can be a bit tricky. To keep off private property, head down through the tip to Hill End Road, where your second car is waiting. You may still come across a fence or two.\n\nThere's also an exit onto Old Grattai Road, but it goes through private property, so try to avoid it.",
       "highlight": false,
+      "image": "/media/misery-traverse/near-caerleon.jpg",
+      "image_alt": "A walker with a yellow and maroon pack pointing out over the trees to the farmland below, under a cloudy sky",
+      "caption": "Looking out over the valley near Caerleon",
       "image_tall": false
     }
   ],
