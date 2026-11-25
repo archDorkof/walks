@@ -30,7 +30,7 @@
     },
     {
       "label": "Time",
-      "value": "[X] hrs"
+      "value": "About 2 hrs walking, 1 hr running"
     },
     {
       "label": "Climb",
@@ -38,7 +38,7 @@
     },
     {
       "label": "Grade",
-      "value": "Grade [X] · [X]"
+      "value": "Grade 1 · Easy"
     },
     {
       "label": "Walk type",
@@ -91,7 +91,7 @@
     {
       "kicker": "Turnaround · about 3.8 km",
       "heading": "The turnaround",
-      "text": "The route turns around on the ridge near the western edge of Avisford Nature Reserve. [X: what's here, and why turn around here]",
+      "text": "The route turns around in the bush near the western edge of Avisford Nature Reserve. There's no view here, so just turn and head back the way you came.",
       "highlight": false,
       "image_tall": false
     },
