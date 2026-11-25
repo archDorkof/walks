@@ -58,6 +58,11 @@ const FAVICONS = `<link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="manifest" href="/assets/icons/site.webmanifest">
 <meta name="theme-color" content="#c4672d">`;
 
+// Vercel Web Analytics (cookieless visitor counts), on every page.
+// Turn it on in the Vercel dashboard: project > Analytics > Enable.
+const ANALYTICS = `<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+<script defer src="/_vercel/insights/script.js"></script>`;
+
 // ---------- route map ----------
 // With a GPX file: an interactive NSW topo map with Hide route, PDF and GPX buttons.
 // Without one: the static map image. Either way, download links for the files.
@@ -173,6 +178,7 @@ function walkPage(w) {
 <meta property="og:description" content="${esc(w.description)}">
 ${w.hero_image ? `<meta property="og:image" content="${esc(abs(w.hero_image))}">` : ''}
 ${FAVICONS}
+${ANALYTICS}
 ${FONTS}
 ${w.map && w.map.gpx ? LEAFLET_CSS : ''}
 <link rel="stylesheet" href="/assets/walk.css">
@@ -316,6 +322,7 @@ function homePage(site, walks) {
 <meta property="og:description" content="${esc(site.meta_description)}">
 ${site.hero_image ? `<meta property="og:image" content="${esc(abs(site.hero_image))}">` : ''}
 ${FAVICONS}
+${ANALYTICS}
 ${FONTS}
 <link rel="stylesheet" href="/assets/home.css">
 </head>
