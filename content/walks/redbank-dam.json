@@ -6,12 +6,12 @@
   "area": "South-western edge of Mudgee",
   "lede": "A quick out-and-back walk or run from the old Redbank Dam, up Waterworks Gully into Avisford Nature Reserve.",
   "description": "A 7.5 km return walk on fire trail and single track from the old Redbank Dam on Old Reservoir Road, Mudgee, up Waterworks Gully into Avisford Nature Reserve. Quick enough for before or after work.",
-  "hero_image": "/media/redbank-dam/route-map.jpg",
-  "hero_alt": "Topographic map showing the route from Redbank Dam west up Waterworks Gully and along the Waterworks Gully Trail into Avisford Nature Reserve",
+  "hero_image": "/media/redbank-dam/old-redbank-dam.jpg",
+  "hero_alt": "The concrete wall of the old Redbank Dam across a grassy valley floor, below a steep, forested hillside",
   "card": {
     "area_tag": "Mudgee",
-    "image": "/media/redbank-dam/route-map.jpg",
-    "image_alt": "Topographic map showing the route from Redbank Dam west up Waterworks Gully into Avisford Nature Reserve",
+    "image": "/media/redbank-dam/old-redbank-dam.jpg",
+    "image_alt": "The concrete wall of the old Redbank Dam across a grassy valley floor, below a steep, forested hillside",
     "blurb": "Up Waterworks Gully from the old Redbank Dam and back. A quick walk or run on fire trail, before or after work.",
     "tags": [
       "Return",
@@ -72,7 +72,10 @@
       "heading": "Redbank Dam",
       "text": "Go through the gate onto the fire trail. The first section takes you past Redbank Dam, an old water supply for Mudgee. It's been deconstructed so it doesn't hold any water now. There are picnic tables and signs around the dam to check out, and you can walk along the base of the dam.",
       "highlight": true,
-      "image_tall": false
+      "image_tall": false,
+      "image": "/media/redbank-dam/old-redbank-dam.jpg",
+      "image_alt": "The concrete wall of the old Redbank Dam across a grassy valley floor, below a steep, forested hillside",
+      "caption": "The old Redbank Dam, which no longer holds water"
     },
     {
       "kicker": "About 0.5 km",
