@@ -77,7 +77,7 @@
     {
       "kicker": "About 0.5 km",
       "heading": "Waterworks Gully",
-      "text": "Past the dam, the fire trail follows Waterworks Gully west into Avisford Nature Reserve, winding up the gully between the spurs. Keep an eye out for orchids in spring.",
+      "text": "Past the dam, the fire trail follows Waterworks Gully west into Avisford Nature Reserve, winding up the gully between the spurs and crossing the creek many times. Keep an eye out for orchids in spring.",
       "highlight": true,
       "image_tall": false
     },
@@ -120,6 +120,11 @@
       "icon": "compass",
       "heading": "Navigation",
       "text": "It's fire trail all the way, so navigation is straightforward. Carry a map or the GPX on your phone."
+    },
+    {
+      "icon": "warning",
+      "heading": "After heavy rain",
+      "text": "Avoid this walk after heavy rain. There are many creek crossings in Waterworks Gully, and the creek rises."
     },
     {
       "icon": "gate",
