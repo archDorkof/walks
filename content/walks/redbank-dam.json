@@ -4,19 +4,19 @@
   "published": true,
   "order": 4,
   "area": "South-western edge of Mudgee",
-  "lede": "An out-and-back walk on fire trail from Redbank Dam, up Waterworks Gully and into the hills of Avisford Nature Reserve.",
-  "description": "A 7.5 km return walk on fire trail from Redbank Dam, on the south-western edge of Mudgee, up Waterworks Gully into Avisford Nature Reserve.",
+  "lede": "A quick out-and-back walk or run from the old Redbank Dam, up Waterworks Gully into Avisford Nature Reserve.",
+  "description": "A 7.5 km return walk on fire trail and single track from the old Redbank Dam on Old Reservoir Road, Mudgee, up Waterworks Gully into Avisford Nature Reserve. Quick enough for before or after work.",
   "hero_image": "/media/redbank-dam/route-map.jpg",
   "hero_alt": "Topographic map showing the route from Redbank Dam west up Waterworks Gully and along the Waterworks Gully Trail into Avisford Nature Reserve",
   "card": {
     "area_tag": "Mudgee",
     "image": "/media/redbank-dam/route-map.jpg",
     "image_alt": "Topographic map showing the route from Redbank Dam west up Waterworks Gully into Avisford Nature Reserve",
-    "blurb": "Fire trail from Redbank Dam up Waterworks Gully and into the hills of Avisford Nature Reserve, then back the same way.",
+    "blurb": "Up Waterworks Gully from the old Redbank Dam and back. A quick walk or run on fire trail, before or after work.",
     "tags": [
       "Return",
       "Fire trail",
-      "Close to town"
+      "Before or after work"
     ]
   },
   "facts": [
@@ -42,42 +42,42 @@
     },
     {
       "label": "Walk type",
-      "value": "Fire trail; Return"
+      "value": "Fire trail and single track; Return"
     },
     {
       "label": "Highlights",
-      "value": "Redbank Dam, Waterworks Gully, Avisford Nature Reserve"
+      "value": "The old Redbank Dam, Waterworks Gully, orchids in spring"
     },
     {
       "label": "Map",
       "value": "Mudgee 8832-4N and Broombee 8832-4S 1:25,000"
     }
   ],
-  "intro": "Redbank Dam sits right on the south-western edge of Mudgee, and from it a fire trail heads straight up Waterworks Gully into the hills of Avisford Nature Reserve. It's fire trail the whole way, out and back the same way, with about 275 m of climbing. It's an easy one to get to from town.",
+  "intro": "Redbank Dam was once part of Mudgee's water supply. It's been deconstructed and no longer holds water, but it makes a good starting point for a walk up Waterworks Gully into Avisford Nature Reserve. It's mostly fire trail, about 275 m of climbing all up, and quick enough to walk or run before or after work.",
   "getting_there": {
-    "intro": "The walk starts at Redbank Dam, on the south-western edge of Mudgee.",
+    "intro": "The walk starts at the entrance to Avisford Nature Reserve at Redbank Dam, on Old Reservoir Road on the south-western edge of Mudgee.",
     "options": [
       {
         "tag": "From Mudgee",
-        "heading": "Redbank Dam",
-        "text": "Head to Redbank Dam on the south-western edge of town and park there. [X: how to get there and where exactly to park]"
+        "heading": "Old Reservoir Road",
+        "text": "Take Old Reservoir Road and park at the Avisford Nature Reserve entrance at Redbank Dam. Head through the gate onto the fire trail."
       }
     ],
-    "note": "[X: any notes on access, gates or parking]"
+    "note": "Avisford Nature Reserve is managed by NSW National Parks, so stay on the tracks."
   },
-  "walk_intro": "The route follows the fire trail west from Redbank Dam up Waterworks Gully, then climbs out of the gully on the Waterworks Gully Trail and heads west into Avisford Nature Reserve. It's about 3.8 km each way, all on fire trail. Turn around and come back the same way.",
+  "walk_intro": "The route heads out on the fire trail past the old Redbank Dam, follows Waterworks Gully west, then climbs out of the gully on the Waterworks Gully Trail into the hills of Avisford Nature Reserve. It's about 3.8 km each way. Come back the same way, and finish on the single track along the north side of the old dam.\n\nFor a short walk of about 2 km, go up the fire trail past the dam and come straight back on the single track on the north side.",
   "stops": [
     {
       "kicker": "Start",
       "heading": "Redbank Dam",
-      "text": "Park at Redbank Dam and pick up the fire trail heading west past the dam, away from town and towards the hills.",
+      "text": "Go through the gate onto the fire trail. The first section takes you past Redbank Dam, an old water supply for Mudgee. It's been deconstructed so it doesn't hold any water now. There are picnic tables and signs around the dam to check out, and you can walk along the base of the dam.",
       "highlight": true,
       "image_tall": false
     },
     {
       "kicker": "About 0.5 km",
       "heading": "Waterworks Gully",
-      "text": "Past the dam, the fire trail follows Waterworks Gully west into Avisford Nature Reserve, winding up the gully floor between the spurs.",
+      "text": "Past the dam, the fire trail follows Waterworks Gully west into Avisford Nature Reserve, winding up the gully between the spurs. Keep an eye out for orchids in spring.",
       "highlight": true,
       "image_tall": false
     },
@@ -92,13 +92,13 @@
       "kicker": "Turnaround · about 3.8 km",
       "heading": "The turnaround",
       "text": "The route turns around on the ridge near the western edge of Avisford Nature Reserve. [X: what's here, and why turn around here]",
-      "highlight": true,
+      "highlight": false,
       "image_tall": false
     },
     {
       "kicker": "Finish · about 7.5 km",
-      "heading": "Back to Redbank Dam",
-      "text": "Head back down the same fire trail to Redbank Dam. It's downhill most of the way.",
+      "heading": "Back past the dam",
+      "text": "Head back down the fire trail. It's downhill most of the way, so it makes a good run. Near the end, take the single track along the north side of the old dam back to the gate.",
       "highlight": false,
       "image_tall": false
     }
@@ -120,6 +120,11 @@
       "icon": "compass",
       "heading": "Navigation",
       "text": "It's fire trail all the way, so navigation is straightforward. Carry a map or the GPX on your phone."
+    },
+    {
+      "icon": "gate",
+      "heading": "Nature reserve",
+      "text": "Avisford Nature Reserve is managed by NSW National Parks. Stay on the tracks and leave the gate as you found it."
     },
     {
       "icon": "water",
