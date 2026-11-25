@@ -96,14 +96,20 @@
       "heading": "The turnaround",
       "text": "The route turns around in the bush near the western edge of Avisford Nature Reserve. There's no view here, so just turn and head back the way you came.",
       "highlight": false,
-      "image_tall": false
+      "image_tall": false,
+      "image": "/media/redbank-dam/turnaround.jpg",
+      "image_alt": "Three runners on a fire trail through open eucalypt forest, laughing and pointing back the way they came",
+      "caption": "No view at the turnaround, so point yourself home"
     },
     {
       "kicker": "Finish · about 7.5 km",
       "heading": "Back past the dam",
       "text": "Head back down the fire trail. It's downhill most of the way, so it makes a good run. Near the end, take the single track along the north side of the old dam back to the gate.",
       "highlight": false,
-      "image_tall": false
+      "image_tall": false,
+      "image": "/media/redbank-dam/gate-at-the-start.jpg",
+      "image_alt": "Runners gathered at the reserve gate beside a gravel car park with a few cars, surrounded by trees",
+      "caption": "The gate and car park at the start, by Redbank Dam"
     }
   ],
   "map": {
