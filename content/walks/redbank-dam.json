@@ -1,0 +1,140 @@
+{
+  "title": "Redbank Dam & Waterworks Gully",
+  "slug": "redbank-dam",
+  "published": true,
+  "order": 4,
+  "area": "South-western edge of Mudgee",
+  "lede": "An out-and-back walk on fire trail from Redbank Dam, up Waterworks Gully and into the hills of Avisford Nature Reserve.",
+  "description": "A 7.5 km return walk on fire trail from Redbank Dam, on the south-western edge of Mudgee, up Waterworks Gully into Avisford Nature Reserve.",
+  "hero_image": "/media/redbank-dam/route-map.jpg",
+  "hero_alt": "Topographic map showing the route from Redbank Dam west up Waterworks Gully and along the Waterworks Gully Trail into Avisford Nature Reserve",
+  "card": {
+    "area_tag": "Mudgee",
+    "image": "/media/redbank-dam/route-map.jpg",
+    "image_alt": "Topographic map showing the route from Redbank Dam west up Waterworks Gully into Avisford Nature Reserve",
+    "blurb": "Fire trail from Redbank Dam up Waterworks Gully and into the hills of Avisford Nature Reserve, then back the same way.",
+    "tags": [
+      "Return",
+      "Fire trail",
+      "Close to town"
+    ]
+  },
+  "facts": [
+    {
+      "label": "Region",
+      "value": "South-western edge of Mudgee"
+    },
+    {
+      "label": "Distance",
+      "value": "About 7.5 km return"
+    },
+    {
+      "label": "Time",
+      "value": "[X] hrs"
+    },
+    {
+      "label": "Climb",
+      "value": "About 275 m total ascent"
+    },
+    {
+      "label": "Grade",
+      "value": "Grade [X] · [X]"
+    },
+    {
+      "label": "Walk type",
+      "value": "Fire trail; Return"
+    },
+    {
+      "label": "Highlights",
+      "value": "Redbank Dam, Waterworks Gully, Avisford Nature Reserve"
+    },
+    {
+      "label": "Map",
+      "value": "Mudgee 8832-4N and Broombee 8832-4S 1:25,000"
+    }
+  ],
+  "intro": "Redbank Dam sits right on the south-western edge of Mudgee, and from it a fire trail heads straight up Waterworks Gully into the hills of Avisford Nature Reserve. It's fire trail the whole way, out and back the same way, with about 275 m of climbing. It's an easy one to get to from town.",
+  "getting_there": {
+    "intro": "The walk starts at Redbank Dam, on the south-western edge of Mudgee.",
+    "options": [
+      {
+        "tag": "From Mudgee",
+        "heading": "Redbank Dam",
+        "text": "Head to Redbank Dam on the south-western edge of town and park there. [X: how to get there and where exactly to park]"
+      }
+    ],
+    "note": "[X: any notes on access, gates or parking]"
+  },
+  "walk_intro": "The route follows the fire trail west from Redbank Dam up Waterworks Gully, then climbs out of the gully on the Waterworks Gully Trail and heads west into Avisford Nature Reserve. It's about 3.8 km each way, all on fire trail. Turn around and come back the same way.",
+  "stops": [
+    {
+      "kicker": "Start",
+      "heading": "Redbank Dam",
+      "text": "Park at Redbank Dam and pick up the fire trail heading west past the dam, away from town and towards the hills.",
+      "highlight": true,
+      "image_tall": false
+    },
+    {
+      "kicker": "About 0.5 km",
+      "heading": "Waterworks Gully",
+      "text": "Past the dam, the fire trail follows Waterworks Gully west into Avisford Nature Reserve, winding up the gully floor between the spurs.",
+      "highlight": true,
+      "image_tall": false
+    },
+    {
+      "kicker": "About 2.8 km",
+      "heading": "Waterworks Gully Trail",
+      "text": "At the head of the gully the Waterworks Gully Trail swings south, then climbs west out of the gully towards the higher ridges of the reserve.",
+      "highlight": false,
+      "image_tall": false
+    },
+    {
+      "kicker": "Turnaround · about 3.8 km",
+      "heading": "The turnaround",
+      "text": "The route turns around on the ridge near the western edge of Avisford Nature Reserve. [X: what's here, and why turn around here]",
+      "highlight": true,
+      "image_tall": false
+    },
+    {
+      "kicker": "Finish · about 7.5 km",
+      "heading": "Back to Redbank Dam",
+      "text": "Head back down the same fire trail to Redbank Dam. It's downhill most of the way.",
+      "highlight": false,
+      "image_tall": false
+    }
+  ],
+  "map": {
+    "image": "/media/redbank-dam/route-map.jpg",
+    "alt": "Topographic map showing the route from Redbank Dam west up Waterworks Gully, then along the Waterworks Gully Trail into Avisford Nature Reserve to the turnaround",
+    "caption": "Approximate route in orange. Base map: Mudgee 8832-4N and Broombee 8832-4S topographic maps, joined at the black line.",
+    "gpx": "/media/redbank-dam/redbank-dam.gpx",
+    "pdf": "/media/redbank-dam/mudgee-broombee-route.pdf",
+    "pdf_blank": "/media/redbank-dam/mudgee-broombee-blank.pdf"
+  },
+  "band": {
+    "image": "",
+    "quote": ""
+  },
+  "tips": [
+    {
+      "icon": "compass",
+      "heading": "Navigation",
+      "text": "It's fire trail all the way, so navigation is straightforward. Carry a map or the GPX on your phone."
+    },
+    {
+      "icon": "water",
+      "heading": "Water",
+      "text": "Carry the water you'll need, especially on a hot day."
+    },
+    {
+      "icon": "hand",
+      "heading": "Respect the Country",
+      "text": "This is Wiradjuri Country. Look, but don't touch. Leave no trace."
+    },
+    {
+      "icon": "phone",
+      "heading": "Tell someone",
+      "text": "Leave your plans with someone."
+    }
+  ]
+}
