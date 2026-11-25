@@ -63,7 +63,7 @@
         "text": "Take Old Reservoir Road and park at the Avisford Nature Reserve entrance at Redbank Dam. Head through the gate onto the fire trail."
       }
     ],
-    "note": "Avisford Nature Reserve is managed by NSW National Parks, so stay on the tracks."
+    "note": ""
   },
   "walk_intro": "The route heads out on the fire trail past the old Redbank Dam, follows Waterworks Gully west, then climbs out of the gully on the Waterworks Gully Trail into the hills of Avisford Nature Reserve. It's about 3.8 km each way. Come back the same way, and finish on the single track along the north side of the old dam.\n\nFor a short walk of about 2 km, go up the fire trail past the dam and come straight back on the single track on the north side.",
   "stops": [
@@ -137,8 +137,8 @@
     },
     {
       "icon": "gate",
-      "heading": "Nature reserve",
-      "text": "Avisford Nature Reserve is managed by NSW National Parks. Stay on the tracks and leave the gate as you found it."
+      "heading": "Gate",
+      "text": "Leave the gate at the start as you found it."
     },
     {
       "icon": "water",
