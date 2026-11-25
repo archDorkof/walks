@@ -51,6 +51,13 @@ const FONTS = `<link rel="preconnect" href="https://fonts.googleapis.com">
 const REVEAL_JS = `const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));`;
 
+// Favicon and home-screen icons (assets/icons/), linked on every page.
+const FAVICONS = `<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<link rel="manifest" href="/assets/icons/site.webmanifest">
+<meta name="theme-color" content="#c4672d">`;
+
 // ---------- route map ----------
 // With a GPX file: an interactive NSW topo map with Hide route, PDF and GPX buttons.
 // Without one: the static map image. Either way, download links for the files.
@@ -165,6 +172,7 @@ function walkPage(w) {
 <meta property="og:title" content="${esc(w.title)}">
 <meta property="og:description" content="${esc(w.description)}">
 ${w.hero_image ? `<meta property="og:image" content="${esc(abs(w.hero_image))}">` : ''}
+${FAVICONS}
 ${FONTS}
 ${w.map && w.map.gpx ? LEAFLET_CSS : ''}
 <link rel="stylesheet" href="/assets/walk.css">
@@ -307,6 +315,7 @@ function homePage(site, walks) {
 <meta property="og:title" content="${esc(site.site_name)} around Mudgee, NSW">
 <meta property="og:description" content="${esc(site.meta_description)}">
 ${site.hero_image ? `<meta property="og:image" content="${esc(abs(site.hero_image))}">` : ''}
+${FAVICONS}
 ${FONTS}
 <link rel="stylesheet" href="/assets/home.css">
 </head>
@@ -413,4 +422,6 @@ console.log(`  built /sitemap.xml (${urls.length} pages) and /robots.txt`);
 for (const d of ['assets', 'media']) {
   if (fs.existsSync(path.join(ROOT, d))) fs.cpSync(path.join(ROOT, d), path.join(OUT, d), { recursive: true });
 }
+// Browsers also ask for /favicon.ico at the site root.
+fs.copyFileSync(path.join(ROOT, 'assets/icons/favicon.ico'), path.join(OUT, 'favicon.ico'));
 console.log(`Done: ${walks.length} walk(s) -> dist/`);
