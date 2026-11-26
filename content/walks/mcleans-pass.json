@@ -4,8 +4,8 @@
   "published": true,
   "order": 5,
   "area": "Gardens of Stone National Park",
-  "lede": "An 11 km return walk from Moffitts Trail to McLeans Pass, through pagoda country to the Stargate Tunnel and its tree ferns.",
-  "description": "An 11 km return walk from the camping ground on Moffitts Trail near Ben Bullen to McLeans Pass and the Stargate Tunnel, a walk-through sandstone tunnel among the pagodas of Gardens of Stone National Park.",
+  "lede": "An 11 km return walk on fire trail and track from Moffitts Trail to McLeans Pass, through pagoda country to the Stargate Tunnel and its tree ferns.",
+  "description": "An 11 km return walk on fire trail and track from the campsite at the junction of Moffitts Trail and the Bicentennial Trail, near Ben Bullen, to McLeans Pass and the Stargate Tunnel, a walk-through sandstone tunnel among the pagodas of Gardens of Stone National Park.",
   "hero_image": "/media/mcleans-pass/pagodas-near-mount-mclean.jpg",
   "hero_alt": "Rounded grey sandstone pagodas rising out of the bush under a sky of white cloud, with ridges fading into the distance",
   "card": {
@@ -15,8 +15,8 @@
     "blurb": "Out through pagoda country to McLeans Pass, then walk through the Stargate Tunnel into a gully full of tree ferns.",
     "tags": [
       "Return",
-      "Pagodas",
-      "Rock tunnel"
+      "Fire trail & track",
+      "Pagodas & tunnel"
     ]
   },
   "facts": [
@@ -26,7 +26,7 @@
     },
     {
       "label": "Distance",
-      "value": "About 11 km return"
+      "value": "About 11 km return, or about 7 km return from the south"
     },
     {
       "label": "Time",
@@ -34,11 +34,11 @@
     },
     {
       "label": "Grade",
-      "value": "Grade [X] · [X]"
+      "value": "Grade 2 · Moderate"
     },
     {
       "label": "Walk type",
-      "value": "[X track / partly off-track]; Return"
+      "value": "Track (fire trail and faint track); Return"
     },
     {
       "label": "Highlights",
@@ -51,29 +51,34 @@
   ],
   "intro": "East of Baal Bone Gap, the plateau breaks up into a maze of sandstone pagodas. At McLeans Pass, below Mount McLean, a tunnel runs right through the rock. Walk through the Stargate Tunnel and you come out into a damp, sheltered gully full of tree ferns.",
   "getting_there": {
-    "intro": "The walk starts at the camping ground by the locked gate on Moffitts Trail, about 1 km south of Baal Bone Gap (Ben Bullen GR 289 179).",
+    "intro": "The walk starts at the campsite at the junction of Moffitts Trail and the Bicentennial Trail (Ben Bullen GR 289 179). Get there via Ben Bullen.",
     "options": [
       {
-        "tag": "From the south",
+        "tag": "From Ben Bullen",
         "heading": "Moffitts Trail",
-        "text": "Head for Moffitts Trail (also signposted as Ben Bullen Trail) and drive to the camping ground by the locked gate. [X How did you get there, and is the trail OK for a conventional vehicle?]"
+        "text": "From Ben Bullen, head out on Moffitts Trail (also signposted as Ben Bullen Trail) to the campsite at the Bicentennial Trail junction.\n\nIn a 2WD you might only get as far as the start of the [Mercurys Boot](/mercurys-boot/) walk, so be ready to walk the rest of the way to the campsite."
+      },
+      {
+        "tag": "From the south",
+        "heading": "Bicentennial Trail",
+        "text": "Coming from the south, you can start on the Bicentennial Trail at Ben Bullen GR 298 163, where the route turns north-east towards McLeans Pass. This cuts about 2 km off each way, making it about 7 km return."
       }
     ],
     "note": "Fire trail conditions change quickly after rain. Check the current NPWS alerts for Gardens of Stone National Park before you go."
   },
-  "walk_intro": "The route heads south-east from the camping ground for about 2 km, then swings north-east and follows the trail along the Wolgan State Forest boundary north to McLeans Pass. It's about 5.5 km each way. Come back the same way.\n\n[X Which parts are on track, and which are off-track?]",
+  "walk_intro": "The route follows the Bicentennial Trail south-east and then south from the campsite for about 2 km, then turns north-east onto a track that climbs to McLeans Pass. It's about 5.5 km each way on fire trail and track. Come back the same way.\n\nThe track isn't used much, so it may be faint in places.",
   "stops": [
     {
       "kicker": "Start",
-      "heading": "Moffitts Trail camping ground",
-      "text": "Start at the camping ground by the locked gate on Moffitts Trail (Ben Bullen GR 289 179) and head south-east.",
+      "heading": "Moffitts Trail campsite",
+      "text": "Start at the campsite at the junction of Moffitts Trail and the Bicentennial Trail (Ben Bullen GR 289 179). Follow the Bicentennial Trail south-east, then south.",
       "highlight": false,
       "image_tall": false
     },
     {
-      "kicker": "About 2.2 km",
+      "kicker": "About 2 km",
       "heading": "Turn north-east",
-      "text": "At the southern end of the route, about 2.2 km from the start, turn north-east onto the trail along the Wolgan State Forest boundary and follow it north towards Mount McLean.",
+      "text": "About 2 km from the start, at Ben Bullen GR 298 163, leave the Bicentennial Trail and turn north-east onto the track towards Mount McLean. This is also where you start if you've come in from the south.\n\nThe track isn't used much, so it can be faint in places. Keep an eye on the map.",
       "highlight": false,
       "image_tall": false
     },
@@ -90,7 +95,7 @@
     {
       "kicker": "About 5.4 km",
       "heading": "McLeans Pass",
-      "text": "McLeans Pass is a way through the pagodas just east of Mount McLean. [X Anything to say about the pass itself?]",
+      "text": "McLeans Pass is a way up through the pagodas just east of Mount McLean, and the turnaround point for this walk.\n\nFrom the pass you can keep exploring the plateau as you wish. It's possible to get out to Point Cameron (and down from it), but that means multiple steep drop-offs and lots of scrub, so it's only for experienced off-track walkers.",
       "highlight": false,
       "image_tall": false
     },
@@ -138,7 +143,7 @@
     {
       "icon": "compass",
       "heading": "Navigation",
-      "text": "There are no signs to McLeans Pass or the Stargate Tunnel. Carry a map and compass or the GPX on your phone, and know how to use them. [X Off-track sections?]"
+      "text": "The route is on fire trail and track, but the track isn't used much and may be faint in places, and there are no signs to McLeans Pass or the Stargate Tunnel. Carry a map and compass or the GPX on your phone, and know how to use them. Going beyond the pass to Point Cameron is off-track, with steep drop-offs and lots of scrub."
     },
     {
       "icon": "warning",
