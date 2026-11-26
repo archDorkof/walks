@@ -30,11 +30,11 @@
     },
     {
       "label": "Time",
-      "value": "[X] hrs"
+      "value": "All day, especially if you explore beyond the pass"
     },
     {
       "label": "Grade",
-      "value": "Grade 2 · Moderate"
+      "value": "Grade 3 · Hard"
     },
     {
       "label": "Walk type",
@@ -153,7 +153,7 @@
     {
       "icon": "water",
       "heading": "Water",
-      "text": "Carry all the water you'll need. Don't rely on finding any on the way."
+      "text": "There's some water in the creeks along the way, but carry what you'll need and treat anything you collect."
     },
     {
       "icon": "hand",
