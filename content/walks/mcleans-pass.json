@@ -1,18 +1,18 @@
 {
-  "title": "McLeans Pass & the Stargate Tunnel",
+  "title": "McLeans Pass & Stargate Tunnel",
   "slug": "mcleans-pass",
   "published": true,
   "order": 5,
   "area": "Gardens of Stone National Park",
-  "lede": "An 11 km return walk on fire trail and track from Moffitts Trail to McLeans Pass, through pagoda country to the Stargate Tunnel and its tree ferns.",
-  "description": "An 11 km return walk on fire trail and track from the campsite at the junction of Moffitts Trail and the Bicentennial Trail, near Ben Bullen, to McLeans Pass and the Stargate Tunnel, a walk-through sandstone tunnel among the pagodas of Gardens of Stone National Park.",
+  "lede": "An 11 km return walk on fire trail and track from Moffitts Trail to McLeans Pass, through pagoda country to Stargate Tunnel and its tree ferns.",
+  "description": "An 11 km return walk on fire trail and track from the campsite at the junction of Moffitts Trail and the Bicentennial Trail, near Ben Bullen, to McLeans Pass and Stargate Tunnel, a walk-through sandstone tunnel among the pagodas of Gardens of Stone National Park.",
   "hero_image": "/media/mcleans-pass/pagodas-near-mount-mclean.jpg",
   "hero_alt": "Rounded grey sandstone pagodas rising out of the bush under a sky of white cloud, with ridges fading into the distance",
   "card": {
     "area_tag": "Gardens of Stone NP",
     "image": "/media/mcleans-pass/stargate-tunnel.jpg",
     "image_alt": "Looking along a tall, narrow sandstone tunnel with a sandy floor towards daylight and tree ferns at the far end",
-    "blurb": "Out through pagoda country to McLeans Pass, then walk through the Stargate Tunnel into a gully full of tree ferns.",
+    "blurb": "Out through pagoda country to McLeans Pass, then walk through Stargate Tunnel into a gully full of tree ferns.",
     "tags": [
       "Return",
       "Fire trail & track",
@@ -42,14 +42,14 @@
     },
     {
       "label": "Highlights",
-      "value": "McLeans Pass, the Stargate Tunnel, pagodas, tree ferns"
+      "value": "McLeans Pass, Stargate Tunnel, pagodas, tree ferns"
     },
     {
       "label": "Map",
       "value": "Ben Bullen 8931-4S and Cullen Bullen 8931-3N 1:25,000"
     }
   ],
-  "intro": "East of Baal Bone Gap, the plateau breaks up into a maze of sandstone pagodas. At McLeans Pass, below Mount McLean, a tunnel runs right through the rock. Walk through the Stargate Tunnel and you come out into a damp, sheltered gully full of tree ferns.",
+  "intro": "East of Baal Bone Gap, the plateau breaks up into a maze of sandstone pagodas. At McLeans Pass, below Mount McLean, a tunnel runs right through the rock. Walk through Stargate Tunnel and you come out into a damp, sheltered gully full of tree ferns.",
   "getting_there": {
     "intro": "The walk starts at the campsite at the junction of Moffitts Trail and the Bicentennial Trail (Ben Bullen GR 289 179). Get there via Ben Bullen.",
     "options": [
@@ -87,10 +87,10 @@
       "heading": "Pagoda country",
       "text": "As you get closer to Mount McLean, the bush opens up and rounded grey sandstone pagodas rise out of the scrub, with views out over the ridges beyond.",
       "highlight": true,
-      "image_tall": false,
       "image": "/media/mcleans-pass/pagodas-near-mount-mclean.jpg",
       "image_alt": "Rounded grey sandstone pagodas rising out of the bush under a sky of white cloud, with ridges fading into the distance",
-      "caption": "Pagodas near Mount McLean"
+      "caption": "Pagodas near Mount McLean",
+      "image_tall": false
     },
     {
       "kicker": "About 5.4 km",
@@ -101,23 +101,23 @@
     },
     {
       "kicker": "Highlight",
-      "heading": "The Stargate Tunnel",
-      "text": "Just below the pass, the Stargate Tunnel runs right through the sandstone. It's tall and narrow, with a sandy floor, and you can walk through it towards the light at the far end.",
+      "heading": "Stargate Tunnel",
+      "text": "Just below the pass, Stargate Tunnel runs right through the sandstone. It's tall and narrow, with a sandy floor, and you can walk through it towards the light at the far end.",
       "highlight": true,
-      "image_tall": true,
       "image": "/media/mcleans-pass/stargate-tunnel.jpg",
       "image_alt": "Looking along a tall, narrow sandstone tunnel with a sandy floor towards daylight and tree ferns at the far end",
-      "caption": "Looking through the Stargate Tunnel"
+      "caption": "Looking through Stargate Tunnel",
+      "image_tall": true
     },
     {
       "kicker": "Through the tunnel",
       "heading": "The tree fern gully",
-      "text": "On the other side is a sheltered gully between sheer sandstone walls, full of tree ferns and bracken. It's a good place to stop for lunch in the shade.",
+      "text": "Near the tunnel is a sheltered gully between sheer sandstone walls, full of tree ferns and bracken. It's a good place to stop for lunch in the shade.",
       "highlight": true,
-      "image_tall": true,
       "image": "/media/mcleans-pass/tree-ferns-near-the-tunnel.jpg",
       "image_alt": "Tall tree ferns and bright green bracken in a narrow gully between high, honeycombed sandstone cliffs, under a blue sky",
-      "caption": "Tree ferns in the gully by the Stargate Tunnel"
+      "caption": "Tree ferns in the gully by Stargate Tunnel",
+      "image_tall": true
     },
     {
       "kicker": "Finish · about 11 km",
@@ -129,21 +129,17 @@
   ],
   "map": {
     "image": "/media/mcleans-pass/route-map.jpg",
-    "alt": "Topographic map showing the route from the Moffitts Trail camping ground south-east, then north-east along the Wolgan State Forest boundary to McLeans Pass and the Stargate Tunnel",
+    "alt": "Topographic map showing the route from the Moffitts Trail camping ground south-east, then north-east along the Wolgan State Forest boundary to McLeans Pass and Stargate Tunnel",
     "caption": "Approximate route in orange. Base map: Ben Bullen 8931-4S and Cullen Bullen 8931-3N topographic maps, joined at the black line.",
     "gpx": "/media/mcleans-pass/mcleans-pass.gpx",
     "pdf": "/media/mcleans-pass/ben-bullen-cullen-bullen-route.pdf",
     "pdf_blank": "/media/mcleans-pass/ben-bullen-cullen-bullen-blank.pdf"
   },
-  "band": {
-    "image": "",
-    "quote": ""
-  },
   "tips": [
     {
       "icon": "compass",
       "heading": "Navigation",
-      "text": "The route is on fire trail and track, but the track isn't used much and may be faint in places, and there are no signs to McLeans Pass or the Stargate Tunnel. Carry a map and compass or the GPX on your phone, and know how to use them. Going beyond the pass to Point Cameron is off-track, with steep drop-offs and lots of scrub."
+      "text": "The route is on fire trail and track, but the track isn't used much and may be faint in places, and there are no signs to McLeans Pass or Stargate Tunnel. Carry a map and compass or the GPX on your phone, and know how to use them. Going beyond the pass to Point Cameron is off-track, with steep drop-offs and lots of scrub."
     },
     {
       "icon": "warning",
