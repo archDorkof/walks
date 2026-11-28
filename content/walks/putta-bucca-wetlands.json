@@ -31,7 +31,7 @@
     },
     {
       "label": "Time",
-      "value": "[X]"
+      "value": "Under 1 hr"
     },
     {
       "label": "Grade",
@@ -121,7 +121,7 @@
   "map": {
     "image": "/media/putta-bucca-wetlands/route-map.jpg",
     "alt": "Topographic map showing the walking tracks at Putta Bucca Wetlands, around the lakes beside the Cudgegong River and Putta Bucca Road on the northern edge of Mudgee",
-    "caption": "Approximate tracks in orange (the Red Gum trail isn't shown). Base map: Mudgee 8832-4N topographic map.",
+    "caption": "Approximate tracks in orange. Base map: Mudgee 8832-4N topographic map.",
     "gpx": "/media/putta-bucca-wetlands/putta-bucca-wetlands.gpx",
     "pdf": "/media/putta-bucca-wetlands/mudgee-route.pdf",
     "pdf_blank": "/media/putta-bucca-wetlands/mudgee-blank.pdf"
