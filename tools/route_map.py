@@ -7,9 +7,13 @@ Needs: pip install pymupdf pyproj pillow numpy
 Inputs
   blank PDF   an A4 export of the NSW topo sheet (no route), printed at 1:25,000
   route       a GPX or GeoJSON line (e.g. exported from CalTopo)
+  areas       optional GeoJSON of areas with lots of paths: CalTopo polygons (shaded and
+              labelled with their title) and lines (thin dashed paths, not counted in the
+              route length). Copied to media/<slug>/areas.geojson for the web map.
 Outputs, into media/<slug>/
   <sheet>-route.pdf   the PDF with the route, start marker, waypoints and a footnote
   <slug>.gpx          the route as GPX (with waypoints), if the input was GeoJSON
+  areas.geojson       the areas, if --areas was given (set map.areas to it in the JSON)
   route-map.jpg       a crop of the route PDF around the route, for "View larger map"
   and it prints the route length.
 
@@ -34,6 +38,7 @@ from pyproj import Transformer
 
 OCHRE = (0xc4 / 255, 0x67 / 255, 0x2d / 255)
 RUST = (0x7a / 255, 0x34 / 255, 0x16 / 255)
+AREA = (0x5b / 255, 0x3a / 255, 0x8c / 255)  # purple, so areas don't read as the route
 DPI = 150
 S = DPI / 72  # pixels per PDF point
 
@@ -63,6 +68,27 @@ def read_route(path):
     wpts = [(re.search(r'<name>([^<]*)', w).group(1) if '<name>' in w else '', float(a), float(b))
             for a, b, w in re.findall(r'<wpt\b[^>]*lat="([^"]+)"[^>]*lon="([^"]+)"[^>]*>([\s\S]*?)</wpt>', text)]
     return [l for l in lines if len(l) > 1], wpts
+
+
+def read_areas(path):
+    """Return (polygons [(title, ring)], paths [[lon, lat], ...], labels [(title, lon, lat)])."""
+    g = json.load(open(path, encoding='utf-8'))
+    feats = g['features'] if g.get('type') == 'FeatureCollection' else [g]
+    polys, paths, labels = [], [], []
+    for f in feats:
+        geom, title = f.get('geometry') or {}, ((f.get('properties') or {}).get('title') or '').strip()
+        t, c = geom.get('type'), geom.get('coordinates')
+        if t == 'Polygon':
+            polys.append((title, c[0]))
+        elif t == 'MultiPolygon':
+            polys += [(title, p[0]) for p in c]
+        elif t == 'LineString':
+            paths.append(c)
+        elif t == 'MultiLineString':
+            paths += c
+        elif t == 'Point' and title:
+            labels.append((title, *c[:2]))
+    return polys, paths, labels
 
 
 def length_m(lines):
@@ -145,6 +171,7 @@ def main():
     ap.add_argument('--zone', type=int, default=56, help='MGA zone (55 west of 150°E, 56 east)')
     ap.add_argument('--waypoint', action='append', default=[], help='"Name,lat,lon" (repeatable)')
     ap.add_argument('--start-label', default='Start')
+    ap.add_argument('--areas', help='GeoJSON of labelled areas (polygons) and their paths (lines)')
     a = ap.parse_args()
 
     out = os.path.join('media', a.slug); os.makedirs(out, exist_ok=True)
@@ -163,6 +190,32 @@ def main():
 
     doc = pymupdf.open(a.blank); pg = doc[0]
     allpts = []
+
+    def area_label(p, txt):
+        fs = 8
+        w = pymupdf.get_text_length(txt, fontname='hebo', fontsize=fs) + 6
+        r = pymupdf.Rect(p.x - w / 2, p.y - 6, p.x + w / 2, p.y + 5)
+        pg.draw_rect(r, color=None, fill=(1, 1, 1), fill_opacity=.8)
+        pg.insert_text((r.x0 + 3, r.y1 - 2.8), txt, fontsize=fs, fontname='hebo', color=AREA)
+
+    area_labels = []
+    if a.areas:  # drawn first, so the route sits on top
+        polys, paths, labels = read_areas(a.areas)
+        for title, ring in polys:
+            pts = [P(*p[:2]) for p in ring]; allpts += pts
+            pg.draw_polyline(pts, color=AREA, fill=AREA, fill_opacity=.12, width=1.4, dashes='[5 3] 0', closePath=True, lineJoin=1)
+            if title:
+                v = pts[:-1] if len(pts) > 3 and pts[0] == pts[-1] else pts
+                area_labels.append((pymupdf.Point(sum(p.x for p in v) / len(v), sum(p.y for p in v) / len(v)), title))
+        for l in paths:
+            pts = [P(*p[:2]) for p in l]; allpts += pts
+            pg.draw_polyline(pts, color=(1, 1, 1), width=2.6, stroke_opacity=.7, lineCap=1, lineJoin=1)
+            pg.draw_polyline(pts, color=AREA, width=1.3, dashes='[3 2] 0', lineCap=1, lineJoin=1)
+        area_labels += [(P(lon, lat), t) for t, lon, lat in labels]
+        print(f'Areas: {len(polys)} polygon(s), {len(paths)} path(s), {len(labels)} label(s)')
+        dst = os.path.join(out, 'areas.geojson')
+        if os.path.abspath(a.areas) != os.path.abspath(dst):
+            open(dst, 'w').write(open(a.areas, encoding='utf-8').read())
     for l in lines:
         pts = [P(*p[:2]) for p in l]; allpts += pts
         pg.draw_polyline(pts, color=(1, 1, 1), width=4.2, stroke_opacity=.8, lineCap=1, lineJoin=1)
@@ -181,7 +234,10 @@ def main():
         p = P(lon, lat); allpts.append(p)
         pg.draw_circle(p, 3.6, color=(1, 1, 1), fill=OCHRE, width=1.2)
         if name: label(p, name, -6, 1)
-    title = f'{a.slug.replace("-", " ").title()}: approximate route in orange. walks.mawt.info'
+    for p, t in area_labels:
+        area_label(p, t)
+    title = f'{a.slug.replace("-", " ").title()}: approximate route in orange' + \
+        ('; areas with many paths in purple' if a.areas else '') + '. walks.mawt.info'
     r = pymupdf.Rect(12, 12, 16 + pymupdf.get_text_length(title, fontname='helv', fontsize=7), 24)
     pg.draw_rect(r, color=None, fill=(1, 1, 1), fill_opacity=.85)
     pg.insert_text((15, 21), title, fontsize=7, fontname='helv', color=RUST)
@@ -206,7 +262,7 @@ def main():
         wx = ''.join(f'\n  <wpt lat="{lat:.6f}" lon="{lon:.6f}"><name>{n}</name></wpt>' for n, lat, lon in wpts)
         open(gpx, 'w').write(f'<?xml version="1.0" encoding="UTF-8"?>\n<gpx version="1.1" creator="walks.mawt.info" '
                              f'xmlns="http://www.topografix.com/GPX/1/1">{wx}\n  <trk>\n    <name>{a.slug}</name>{segs}\n  </trk>\n</gpx>\n')
-    print('Wrote', pdf_out, jpg, gpx, sep='\n  ')
+    print('Wrote', pdf_out, jpg, gpx, *([os.path.join(out, 'areas.geojson')] if a.areas else []), sep='\n  ')
 
 
 if __name__ == '__main__':

@@ -29,7 +29,8 @@ Matt will give you photos (and maybe a GPX file or a map screenshot) plus rough 
    - Render it, read one easting and one northing grid label, and run
      `python3 tools/route_map.py --slug <walk-slug> --sheet <sheet> --blank media/<walk-slug>/<sheet>-blank.pdf --route <route file> --vline <x_pt>:<easting_km> --hline <y_pt>:<northing_km> --waypoint "<Feature>,<lat>,<lon>"`
      (needs `pip install pymupdf pyproj pillow numpy`). It writes `<sheet>-route.pdf`, `route-map.jpg` and `<walk-slug>.gpx`, and prints the route length. Check the residual it prints is under about 0.5 pt, and look at `route-map.jpg` to confirm the route follows the tracks and cliffs it should.
-   - In the JSON `map`: `image` = route-map.jpg, `gpx`, `pdf` = the route PDF, `pdf_blank` = the blank PDF. The page then shows the interactive map with Hide route, View larger map, Download PDF map and Download GPX buttons.
+   - To mark an area with lots of paths (not part of the route), add `--areas <file>.geojson` (CalTopo polygons with titles, plus optional lines). See `STYLE_GUIDE.md` section 8.
+   - In the JSON `map`: `image` = route-map.jpg, `gpx`, `pdf` = the route PDF, `pdf_blank` = the blank PDF, and `areas` = areas.geojson if there is one. The page then shows the interactive map with Hide route, View larger map, Download PDF map and Download GPX buttons.
    - Use the measured length for the Distance fact (`node build.mjs` also prints it). GPX files drawn in CalTopo have no heights, so ask Matt for the total climb from CalTopo's elevation profile.
 4. **Write the JSON** by copying `content/walks/mercurys-boot.json` and keeping exactly the same keys and structure. Change only the content.
    - Image paths look like `/media/<walk-slug>/<file>.jpg`.

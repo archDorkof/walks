@@ -75,7 +75,7 @@ function mapPanel(m) {
           data-route="${esc(m.pdf || m.pdf_blank)}" data-blank="${esc(m.pdf_blank || m.pdf)}">Download PDF map</a>` : '';
   if (m.gpx) return `<aside class="map-panel reveal">
       <div class="topo-wrap">
-        <div class="topo" data-gpx="${esc(m.gpx)}" role="region" aria-label="${esc(m.alt || 'Interactive topographic map of the route')}"></div>
+        <div class="topo" data-gpx="${esc(m.gpx)}"${m.areas ? ` data-areas="${esc(m.areas)}"` : ''} role="region" aria-label="${esc(m.alt || 'Interactive topographic map of the route')}"></div>
         ${m.caption ? `<p class="map-caption">${esc(m.caption)}</p>` : ''}
       </div>
       <div class="downloads">
@@ -114,8 +114,24 @@ const TOPO_JS = `document.querySelectorAll('.topo[data-gpx]').forEach(async el =
     if (lines.length) L.circleMarker(lines[0][0], { radius: 7, color: '#fff', weight: 2, fillColor: '#7a3416', fillOpacity: 1 }).bindTooltip('Start', { permanent: true, direction: 'left', className: 'map-label' }).addTo(route);
     xml.querySelectorAll('wpt').forEach(w => L.circleMarker([+w.getAttribute('lat'), +w.getAttribute('lon')], { radius: 6, color: '#fff', weight: 2, fillColor: '#c4672d', fillOpacity: 1 })
       .bindTooltip(w.querySelector('name')?.textContent || '', { permanent: true, direction: 'right', className: 'map-label' }).addTo(route));
+    // Optional areas with lots of paths (GeoJSON from CalTopo): purple shaded polygons
+    // labelled with their title, dashed purple paths, and titled points as labels.
+    if (el.dataset.areas) {
+      const gj = await (await fetch(el.dataset.areas)).json();
+      L.geoJSON(gj, {
+        style: f => /Polygon/.test(f.geometry.type)
+          ? { color: '#5b3a8c', weight: 2, dashArray: '6 4', fillColor: '#5b3a8c', fillOpacity: .12 }
+          : { color: '#5b3a8c', weight: 2.5, dashArray: '4 4', opacity: .9 },
+        pointToLayer: (f, ll) => L.circleMarker(ll, { radius: 0, opacity: 0, fillOpacity: 0 }),
+        onEachFeature: (f, layer) => {
+          const t = f.properties && f.properties.title;
+          if (!t || /Line/.test(f.geometry.type)) { if (t) layer.bindTooltip(t, { sticky: true, className: 'map-label area-label' }); return; }
+          layer.bindTooltip(t, { permanent: true, direction: 'center', className: 'map-label area-label' });
+        }
+      }).eachLayer(l => route.addLayer(l));
+    }
     route.addTo(map);
-    if (lines.length) map.fitBounds(route.getBounds(), { padding: [24, 24] });
+    if (lines.length || el.dataset.areas) map.fitBounds(route.getBounds(), { padding: [24, 24] });
     // "Hide route" removes the route, markers and labels, leaving the plain topo map.
     const panel = el.closest('.map-panel'), btn = panel.querySelector('.route-btn'), pdf = panel.querySelector('.pdf-btn');
     btn.addEventListener('click', () => {
