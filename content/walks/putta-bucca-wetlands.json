@@ -1,0 +1,160 @@
+{
+  "title": "Putta Bucca Wetlands",
+  "slug": "putta-bucca-wetlands",
+  "published": true,
+  "order": 6,
+  "area": "Northern edge of Mudgee",
+  "lede": "A handful of short, easy tracks around the lakes and along the Cudgegong River on the edge of town, with a playground and picnic spots.",
+  "description": "Putta Bucca Wetlands is a walking area on the northern edge of Mudgee, with four short, easy tracks around Quarry Lake, Turtle Island and the Cudgegong River. Good for picnics, groups and small children, with a playground. Dogs on leads are welcome.",
+  "hero_image": "/media/putta-bucca-wetlands/putta-bucca-wetlands-map.jpg",
+  "hero_alt": "An illustrated map of Putta Bucca Wetlands Reserve showing Quarry Lake, Turtle Island, the Cudgegong River and four coloured walking tracks",
+  "card": {
+    "area_tag": "Mudgee",
+    "image": "/media/putta-bucca-wetlands/putta-bucca-wetlands-map.jpg",
+    "image_alt": "An illustrated map of Putta Bucca Wetlands Reserve showing Quarry Lake, Turtle Island, the Cudgegong River and four coloured walking tracks",
+    "blurb": "A walking area on the edge of town with four short, easy tracks around the lakes and the river. Good for picnics, groups and small children.",
+    "tags": [
+      "Walking area",
+      "Playground",
+      "Kids",
+      "Dogs on leads"
+    ]
+  },
+  "facts": [
+    {
+      "label": "Region",
+      "value": "Putta Bucca, northern edge of Mudgee"
+    },
+    {
+      "label": "Distance",
+      "value": "Four short tracks, 400 m–1.4 km each"
+    },
+    {
+      "label": "Time",
+      "value": "[X]"
+    },
+    {
+      "label": "Grade",
+      "value": "Grade 1 · Easy"
+    },
+    {
+      "label": "Walk type",
+      "value": "Walking area; formed tracks and short loops"
+    },
+    {
+      "label": "Highlights",
+      "value": "Quarry Lake, Turtle Island, the Cudgegong River, the playground"
+    },
+    {
+      "label": "Facilities",
+      "value": "Playground, picnic areas, toilets, parking"
+    },
+    {
+      "label": "Dogs",
+      "value": "Allowed on a lead"
+    },
+    {
+      "label": "Map",
+      "value": "Mudgee 8832-4N 1:25,000"
+    }
+  ],
+  "intro": "Putta Bucca Wetlands isn't one walk but a small walking area right on the edge of town. Four short tracks wind around Quarry Lake, Turtle Island and the Cudgegong River, so you can do one loop or join a few together. It's easy and flat, with a playground and picnic spots, which makes it a good outing for groups and small children.",
+  "getting_there": {
+    "intro": "The wetlands are on Putta Bucca Road, just north of Mudgee's town centre.",
+    "options": [
+      {
+        "tag": "From Mudgee",
+        "heading": "Putta Bucca Road",
+        "text": "Head north out of town to Putta Bucca Road. The wetlands entrance is on the river side of the road, with a car park just inside and a second one further in, next to the start of the tracks."
+      }
+    ],
+    "note": "The reserve sits beside the Cudgegong River, so the tracks can be muddy after heavy rain."
+  },
+  "walk_intro": "There's no single route here. Pick a track from the map below, or join a few together. The River loop goes right around the outside, and the shorter tracks cut through the middle and around Turtle Island. All the track lengths are from the reserve map.",
+  "stops": [
+    {
+      "kicker": "Start",
+      "heading": "The car parks",
+      "text": "From the entrance on Putta Bucca Road, the access road leads to a car park and then a second car park further in. The tracks start from the upper car park, near the toilets and the playground.",
+      "highlight": false,
+      "image": "/media/putta-bucca-wetlands/putta-bucca-wetlands-map.jpg",
+      "image_alt": "An illustrated map of Putta Bucca Wetlands Reserve showing the car parks, toilets, playground, picnic areas, Quarry Lake, Turtle Island and four coloured walking tracks: Red Gum trail, River loop, Wetland track and Turtle Island loop",
+      "caption": "The tracks at Putta Bucca Wetlands",
+      "image_tall": false
+    },
+    {
+      "kicker": "Highlight · 1.4 km loop",
+      "heading": "River loop",
+      "text": "The longest track runs right around the outside of the reserve. It follows the Cudgegong River along the western side, then swings around the northern shore of Quarry Lake and back past Turtle Island to the car park.",
+      "highlight": true,
+      "image_tall": false
+    },
+    {
+      "kicker": "500 m",
+      "heading": "Wetland track",
+      "text": "A short track through the middle of the reserve, between the River loop and Quarry Lake. It passes the mudflats, an old quarry truck and a viewing area over the lake.",
+      "highlight": false,
+      "image_tall": false
+    },
+    {
+      "kicker": "Highlight · 400 m loop",
+      "heading": "Turtle Island loop",
+      "text": "A small loop off the eastern side of the River loop, around the lake with Turtle Island in it.",
+      "highlight": true,
+      "image_tall": false
+    },
+    {
+      "kicker": "500 m",
+      "heading": "Red Gum trail",
+      "text": "This track runs through the red gums between the entrance on Putta Bucca Road and the car parks, alongside the access road.",
+      "highlight": false,
+      "image_tall": false
+    },
+    {
+      "kicker": "Highlight · by the car park",
+      "heading": "Playground and picnic areas",
+      "text": "The playground is next to the upper car park, near the toilets. There are picnic tables beside Quarry Lake and at spots around the River loop, so it's an easy place to bring a group or small children.",
+      "highlight": true,
+      "image_tall": false
+    }
+  ],
+  "map": {
+    "image": "/media/putta-bucca-wetlands/route-map.jpg",
+    "alt": "Topographic map showing the walking tracks at Putta Bucca Wetlands, around the lakes beside the Cudgegong River and Putta Bucca Road on the northern edge of Mudgee",
+    "caption": "Approximate tracks in orange (the Red Gum trail isn't shown). Base map: Mudgee 8832-4N topographic map.",
+    "gpx": "/media/putta-bucca-wetlands/putta-bucca-wetlands.gpx",
+    "pdf": "/media/putta-bucca-wetlands/mudgee-route.pdf",
+    "pdf_blank": "/media/putta-bucca-wetlands/mudgee-blank.pdf"
+  },
+  "band": {
+    "image": "",
+    "quote": ""
+  },
+  "tips": [
+    {
+      "icon": "compass",
+      "heading": "Navigation",
+      "text": "The tracks are short and easy to follow, and you're never far from the car park. Grab the map above if you want to plan a route that joins a few tracks together."
+    },
+    {
+      "icon": "info",
+      "heading": "Dogs",
+      "text": "Dogs are welcome on a lead. Bring bags and take everything home with you."
+    },
+    {
+      "icon": "warning",
+      "heading": "Water and kids",
+      "text": "The tracks run close to the lakes and the river, so keep small children close by the water's edge."
+    },
+    {
+      "icon": "water",
+      "heading": "Drinking water",
+      "text": "Bring your own drinking water, especially on a hot day."
+    },
+    {
+      "icon": "hand",
+      "heading": "Respect the Country",
+      "text": "This is Wiradjuri Country. Look after the wetlands and the wildlife that lives there. Leave no trace."
+    }
+  ]
+}
