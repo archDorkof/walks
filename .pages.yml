@@ -182,6 +182,9 @@ content:
           - name: gpx
             label: GPX file (optional)
             type: file
+          - name: areas
+            label: Areas with lots of paths (GeoJSON, optional)
+            type: file
           - name: pdf
             label: Printable map with route (PDF, optional)
             type: file

@@ -248,6 +248,7 @@
   .route-btn{min-width:8.6em;text-align:center}
   .leaflet-tooltip.map-label{background:#fffaf2;border:0;box-shadow:0 2px 6px rgba(60,30,10,.3);color:var(--rust);font:600 .78rem Inter,sans-serif;padding:2px 7px}
   .leaflet-tooltip.map-label::before{display:none}
+  .leaflet-tooltip.area-label{color:#5b3a8c;font-weight:700}
   .map-caption{font-size:.82rem;color:var(--ink-soft);padding:.7rem .4rem .2rem;margin:0}
   .downloads{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}
   .downloads .gpx{margin-top:0}

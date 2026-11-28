@@ -213,6 +213,15 @@ Rules:
 - Take the Distance quick fact from the GPX. `tools/route_map.py` and `node build.mjs` both print the route length. A GPX drawn in CalTopo has no heights, so take the Climb from CalTopo's elevation profile.
 - A walk without a GPX falls back to the static map image with a download button. Use this only until the GPX is ready.
 
+### Areas with lots of paths
+
+Where a walk passes an area with a tangle of paths (pagoda country, a slot canyon maze), mark the area instead of drawing every path as the route:
+- Either outline the area in CalTopo with **Add → Polygon** and give it a title (the label shown on the map), or just send the paths. Paths can be lines in the same GeoJSON export or any number of separate GPX tracks. A polygon isn't needed.
+- Without a polygon, label the area with a titled **Marker** (or a GPX waypoint), or with `--area-label "Name,lat,lon"`.
+- Run `tools/route_map.py` as usual, adding `--areas <files>` (GeoJSON and/or GPX) and any `--area-label`. It shades polygons in purple with a dashed outline and their label, draws the paths as thin dashed purple lines under the orange route, and merges everything into `media/<walk-slug>/areas.geojson`. Area paths don't count towards the route length.
+- In the JSON `map`, set `areas` to `/media/<walk-slug>/areas.geojson` (Pages CMS: **Areas with lots of paths**). The interactive map then shows the same areas, and **Hide route** hides them too.
+- Mention the area in the caption: *Approximate route in orange; area with many paths in purple.* Never outline a cultural site.
+
 ---
 
 ## 9. Safety and respect
