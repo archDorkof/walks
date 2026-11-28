@@ -6,12 +6,12 @@
   "area": "Northern edge of Mudgee",
   "lede": "A handful of short, easy tracks around the lakes and along the Cudgegong River on the edge of town, with a playground and picnic spots.",
   "description": "Putta Bucca Wetlands is a walking area on the northern edge of Mudgee, with four short, easy tracks around Quarry Lake, Turtle Island and the Cudgegong River. Good for picnics, groups and small children, with a playground. Dogs on leads are welcome.",
-  "hero_image": "/media/putta-bucca-wetlands/putta-bucca-wetlands-map.jpg",
-  "hero_alt": "An illustrated map of Putta Bucca Wetlands Reserve showing Quarry Lake, Turtle Island, the Cudgegong River and four coloured walking tracks",
+  "hero_image": "/media/putta-bucca-wetlands/walking-dogs-by-the-lake.jpg",
+  "hero_alt": "Two walkers with three dogs on a gravel track through river red gums, above the eroded bank of a brown lake",
   "card": {
     "area_tag": "Mudgee",
-    "image": "/media/putta-bucca-wetlands/putta-bucca-wetlands-map.jpg",
-    "image_alt": "An illustrated map of Putta Bucca Wetlands Reserve showing Quarry Lake, Turtle Island, the Cudgegong River and four coloured walking tracks",
+    "image": "/media/putta-bucca-wetlands/playground.jpg",
+    "image_alt": "A timber playground with a cubby tower and climbing nets under a shade sail, with a platypus sculpture on the grass beside it",
     "blurb": "A walking area on the edge of town with four short, easy tracks around the lakes and the river. Good for picnics, groups and small children.",
     "tags": [
       "Walking area",
@@ -87,7 +87,10 @@
       "heading": "River loop",
       "text": "The longest track runs right around the outside of the reserve. It follows the Cudgegong River along the western side, then swings around the northern shore of Quarry Lake and back past Turtle Island to the car park.",
       "highlight": true,
-      "image_tall": false
+      "image_tall": false,
+      "image": "/media/putta-bucca-wetlands/gravel-track-by-the-river.jpg",
+      "image_alt": "A walker in a red shirt and cap on a wide gravel track between mown grass and trees, with the river through the trees on the right",
+      "caption": "The gravel track beside the Cudgegong River"
     },
     {
       "kicker": "500 m",
@@ -97,10 +100,20 @@
       "image_tall": false
     },
     {
-      "kicker": "Highlight · 400 m loop",
+      "kicker": "Highlight · beside Quarry Lake",
+      "heading": "Bird hides",
+      "text": "Two bird hides look out over Quarry Lake. They're old shipping containers with viewing windows, painted with big murals of waterbirds.",
+      "highlight": true,
+      "image": "/media/putta-bucca-wetlands/bird-hide.jpg",
+      "image_alt": "Two walkers with dogs on leads beside a rusty shipping container bird hide with a green roof, painted with a mural of a duck",
+      "caption": "One of the bird hides on Quarry Lake",
+      "image_tall": false
+    },
+    {
+      "kicker": "400 m loop",
       "heading": "Turtle Island loop",
       "text": "A small loop off the eastern side of the River loop, around the lake with Turtle Island in it.",
-      "highlight": true,
+      "highlight": false,
       "image_tall": false
     },
     {
@@ -113,9 +126,12 @@
     {
       "kicker": "Highlight · by the car park",
       "heading": "Playground and picnic areas",
-      "text": "The playground is next to the upper car park, near the toilets. There are picnic tables beside Quarry Lake and at spots around the River loop, so it's an easy place to bring a group or small children.",
+      "text": "The playground is next to the upper car park, near the toilets. It's a timber cubby and climbing frame under a shade sail, with a platypus sculpture on the grass beside it. There are picnic tables beside Quarry Lake and at spots around the River loop, so it's an easy place to bring a group or small children.",
       "highlight": true,
-      "image_tall": false
+      "image_tall": false,
+      "image": "/media/putta-bucca-wetlands/playground.jpg",
+      "image_alt": "A timber playground with a cubby tower and climbing nets under a shade sail, with a platypus sculpture on the grass beside it",
+      "caption": "The playground near the upper car park"
     }
   ],
   "map": {
@@ -127,8 +143,8 @@
     "pdf_blank": "/media/putta-bucca-wetlands/mudgee-blank.pdf"
   },
   "band": {
-    "image": "",
-    "quote": ""
+    "image": "/media/putta-bucca-wetlands/boardwalk-through-the-red-gums.jpg",
+    "quote": "Flat, easy walking on gravel tracks and boardwalks."
   },
   "tips": [
     {
